@@ -1,0 +1,353 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+(() => {
+var exports = {};
+exports.id = "app/_not-found/page";
+exports.ids = ["app/_not-found/page"];
+exports.modules = {
+
+/***/ "next/dist/compiled/next-server/app-page.runtime.dev.js":
+/*!*************************************************************************!*\
+  !*** external "next/dist/compiled/next-server/app-page.runtime.dev.js" ***!
+  \*************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js");
+
+/***/ }),
+
+/***/ "../app-render/action-async-storage.external":
+/*!*******************************************************************************!*\
+  !*** external "next/dist/server/app-render/action-async-storage.external.js" ***!
+  \*******************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/server/app-render/action-async-storage.external.js");
+
+/***/ }),
+
+/***/ "../app-render/work-async-storage.external":
+/*!*****************************************************************************!*\
+  !*** external "next/dist/server/app-render/work-async-storage.external.js" ***!
+  \*****************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/server/app-render/work-async-storage.external.js");
+
+/***/ }),
+
+/***/ "./work-unit-async-storage.external":
+/*!**********************************************************************************!*\
+  !*** external "next/dist/server/app-render/work-unit-async-storage.external.js" ***!
+  \**********************************************************************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("next/dist/server/app-render/work-unit-async-storage.external.js");
+
+/***/ }),
+
+/***/ "assert":
+/*!*************************!*\
+  !*** external "assert" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("assert");
+
+/***/ }),
+
+/***/ "crypto":
+/*!*************************!*\
+  !*** external "crypto" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("crypto");
+
+/***/ }),
+
+/***/ "events":
+/*!*************************!*\
+  !*** external "events" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("events");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("fs");
+
+/***/ }),
+
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "http2":
+/*!************************!*\
+  !*** external "http2" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http2");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "net":
+/*!**********************!*\
+  !*** external "net" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("net");
+
+/***/ }),
+
+/***/ "path":
+/*!***********************!*\
+  !*** external "path" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("path");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
+/***/ "tls":
+/*!**********************!*\
+  !*** external "tls" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tls");
+
+/***/ }),
+
+/***/ "tty":
+/*!**********************!*\
+  !*** external "tty" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("tty");
+
+/***/ }),
+
+/***/ "url":
+/*!**********************!*\
+  !*** external "url" ***!
+  \**********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("url");
+
+/***/ }),
+
+/***/ "util":
+/*!***********************!*\
+  !*** external "util" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("util");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
+
+/***/ }),
+
+/***/ "?d272":
+/*!********************************!*\
+  !*** supports-color (ignored) ***!
+  \********************************/
+/***/ (() => {
+
+/* (ignored) */
+
+/***/ }),
+
+/***/ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2F_not-found%2Fpage&page=%2F_not-found%2Fpage&appPaths=&pagePath=..%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2F_not-found%2Fpage&page=%2F_not-found%2Fpage&appPaths=&pagePath=..%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D! ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   GlobalError: () => (/* reexport default from dynamic */ next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default.a),\n/* harmony export */   __next_app__: () => (/* binding */ __next_app__),\n/* harmony export */   pages: () => (/* binding */ pages),\n/* harmony export */   routeModule: () => (/* binding */ routeModule),\n/* harmony export */   tree: () => (/* binding */ tree)\n/* harmony export */ });\n/* harmony import */ var next_dist_server_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/server/route-modules/app-page/module.compiled */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/module.compiled.js?2c4b\");\n/* harmony import */ var next_dist_server_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_dist_server_route_kind__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/dist/server/route-kind */ \"(rsc)/./node_modules/next/dist/server/route-kind.js\");\n/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/dist/client/components/error-boundary */ \"(rsc)/./node_modules/next/dist/client/components/error-boundary.js\");\n/* harmony import */ var next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_client_components_error_boundary__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/dist/server/app-render/entry-base */ \"(rsc)/./node_modules/next/dist/server/app-render/entry-base.js\");\n/* harmony import */ var next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony reexport (unknown) */ var __WEBPACK_REEXPORT_OBJECT__ = {};\n/* harmony reexport (unknown) */ for(const __WEBPACK_IMPORT_KEY__ in next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__) if([\"default\",\"tree\",\"pages\",\"GlobalError\",\"__next_app__\",\"routeModule\"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) __WEBPACK_REEXPORT_OBJECT__[__WEBPACK_IMPORT_KEY__] = () => next_dist_server_app_render_entry_base__WEBPACK_IMPORTED_MODULE_3__[__WEBPACK_IMPORT_KEY__]\n/* harmony reexport (unknown) */ __webpack_require__.d(__webpack_exports__, __WEBPACK_REEXPORT_OBJECT__);\nconst notFound0 = () => Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! next/dist/client/components/not-found-error */ \"(rsc)/./node_modules/next/dist/client/components/not-found-error.js\", 23));\nconst module1 = () => Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/app/layout.tsx */ \"(rsc)/./src/app/layout.tsx\"));\nconst module2 = () => Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! next/dist/client/components/not-found-error */ \"(rsc)/./node_modules/next/dist/client/components/not-found-error.js\", 23));\n\n\n// We inject the tree and pages here so that we can use them in the route\n// module.\nconst tree = {\n        children: [\n        '',\n        {\n          children: [\"/_not-found\", {\n            children: ['__PAGE__', {}, {\n              page: [\n                notFound0,\n                \"next/dist/client/components/not-found-error\"\n              ]\n            }]\n          }, {}]\n        },\n        {\n        'layout': [module1, \"/home/danish/Desktop/nutricount/frontend/src/app/layout.tsx\"],\n'not-found': [module2, \"next/dist/client/components/not-found-error\"],\n        \n      }\n      ]\n      }.children;\nconst pages = [];\n\n\nconst __next_app_require__ = __webpack_require__\nconst __next_app_load_chunk__ = () => Promise.resolve()\nconst __next_app__ = {\n    require: __next_app_require__,\n    loadChunk: __next_app_load_chunk__\n};\n\n// Create and export the route module that will be consumed.\nconst routeModule = new next_dist_server_route_modules_app_page_module_compiled__WEBPACK_IMPORTED_MODULE_0__.AppPageRouteModule({\n    definition: {\n        kind: next_dist_server_route_kind__WEBPACK_IMPORTED_MODULE_1__.RouteKind.APP_PAGE,\n        page: \"/_not-found/page\",\n        pathname: \"/_not-found\",\n        // The following aren't used in production.\n        bundlePath: '',\n        filename: '',\n        appPaths: []\n    },\n    userland: {\n        loaderTree: tree\n    }\n});\n\n//# sourceMappingURL=app-page.js.map//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWFwcC1sb2FkZXIvaW5kZXguanM/bmFtZT1hcHAlMkZfbm90LWZvdW5kJTJGcGFnZSZwYWdlPSUyRl9ub3QtZm91bmQlMkZwYWdlJmFwcFBhdGhzPSZwYWdlUGF0aD0uLiUyRm5vZGVfbW9kdWxlcyUyRm5leHQlMkZkaXN0JTJGY2xpZW50JTJGY29tcG9uZW50cyUyRm5vdC1mb3VuZC1lcnJvci5qcyZhcHBEaXI9JTJGaG9tZSUyRmRhbmlzaCUyRkRlc2t0b3AlMkZudXRyaWNvdW50JTJGZnJvbnRlbmQlMkZzcmMlMkZhcHAmcGFnZUV4dGVuc2lvbnM9dHN4JnBhZ2VFeHRlbnNpb25zPXRzJnBhZ2VFeHRlbnNpb25zPWpzeCZwYWdlRXh0ZW5zaW9ucz1qcyZyb290RGlyPSUyRmhvbWUlMkZkYW5pc2glMkZEZXNrdG9wJTJGbnV0cmljb3VudCUyRmZyb250ZW5kJmlzRGV2PXRydWUmdHNjb25maWdQYXRoPXRzY29uZmlnLmpzb24mYmFzZVBhdGg9JmFzc2V0UHJlZml4PSZuZXh0Q29uZmlnT3V0cHV0PSZwcmVmZXJyZWRSZWdpb249Jm1pZGRsZXdhcmVDb25maWc9ZTMwJTNEISIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSx3QkFBd0IsME5BQWdGO0FBQ3hHLHNCQUFzQixvSkFBZ0c7QUFDdEgsc0JBQXNCLDBOQUFnRjtBQUdwRztBQUNzRDtBQUN4RDtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLHFDQUFxQztBQUNyQztBQUNBO0FBQ0E7QUFDQTtBQUNBLGFBQWE7QUFDYixXQUFXLElBQUk7QUFDZixTQUFTO0FBQ1Q7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsT0FBTztBQUNQO0FBQ3VCO0FBQzZEO0FBQ3BGLDZCQUE2QixtQkFBbUI7QUFDaEQ7QUFDTztBQUNQO0FBQ0E7QUFDQTtBQUN1RDtBQUN2RDtBQUNPLHdCQUF3Qix1R0FBa0I7QUFDakQ7QUFDQSxjQUFjLGtFQUFTO0FBQ3ZCO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLEtBQUs7QUFDTDtBQUNBO0FBQ0E7QUFDQSxDQUFDOztBQUVEIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbnV0cmljb3VudC1mcm9udGVuZC8/NjA2NyJdLCJzb3VyY2VzQ29udGVudCI6WyJjb25zdCBub3RGb3VuZDAgPSAoKSA9PiBpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIm5leHQvZGlzdC9jbGllbnQvY29tcG9uZW50cy9ub3QtZm91bmQtZXJyb3JcIik7XG5jb25zdCBtb2R1bGUxID0gKCkgPT4gaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCIvaG9tZS9kYW5pc2gvRGVza3RvcC9udXRyaWNvdW50L2Zyb250ZW5kL3NyYy9hcHAvbGF5b3V0LnRzeFwiKTtcbmNvbnN0IG1vZHVsZTIgPSAoKSA9PiBpbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIm5leHQvZGlzdC9jbGllbnQvY29tcG9uZW50cy9ub3QtZm91bmQtZXJyb3JcIik7XG5pbXBvcnQgeyBBcHBQYWdlUm91dGVNb2R1bGUgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9yb3V0ZS1tb2R1bGVzL2FwcC1wYWdlL21vZHVsZS5jb21waWxlZFwiIHdpdGgge1xuICAgICd0dXJib3BhY2stdHJhbnNpdGlvbic6ICduZXh0LXNzcidcbn07XG5pbXBvcnQgeyBSb3V0ZUtpbmQgfSBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9yb3V0ZS1raW5kXCI7XG4vLyBXZSBpbmplY3QgdGhlIHRyZWUgYW5kIHBhZ2VzIGhlcmUgc28gdGhhdCB3ZSBjYW4gdXNlIHRoZW0gaW4gdGhlIHJvdXRlXG4vLyBtb2R1bGUuXG5jb25zdCB0cmVlID0ge1xuICAgICAgICBjaGlsZHJlbjogW1xuICAgICAgICAnJyxcbiAgICAgICAge1xuICAgICAgICAgIGNoaWxkcmVuOiBbXCIvX25vdC1mb3VuZFwiLCB7XG4gICAgICAgICAgICBjaGlsZHJlbjogWydfX1BBR0VfXycsIHt9LCB7XG4gICAgICAgICAgICAgIHBhZ2U6IFtcbiAgICAgICAgICAgICAgICBub3RGb3VuZDAsXG4gICAgICAgICAgICAgICAgXCJuZXh0L2Rpc3QvY2xpZW50L2NvbXBvbmVudHMvbm90LWZvdW5kLWVycm9yXCJcbiAgICAgICAgICAgICAgXVxuICAgICAgICAgICAgfV1cbiAgICAgICAgICB9LCB7fV1cbiAgICAgICAgfSxcbiAgICAgICAge1xuICAgICAgICAnbGF5b3V0JzogW21vZHVsZTEsIFwiL2hvbWUvZGFuaXNoL0Rlc2t0b3AvbnV0cmljb3VudC9mcm9udGVuZC9zcmMvYXBwL2xheW91dC50c3hcIl0sXG4nbm90LWZvdW5kJzogW21vZHVsZTIsIFwibmV4dC9kaXN0L2NsaWVudC9jb21wb25lbnRzL25vdC1mb3VuZC1lcnJvclwiXSxcbiAgICAgICAgXG4gICAgICB9XG4gICAgICBdXG4gICAgICB9LmNoaWxkcmVuO1xuY29uc3QgcGFnZXMgPSBbXTtcbmV4cG9ydCB7IHRyZWUsIHBhZ2VzIH07XG5leHBvcnQgeyBkZWZhdWx0IGFzIEdsb2JhbEVycm9yIH0gZnJvbSBcIm5leHQvZGlzdC9jbGllbnQvY29tcG9uZW50cy9lcnJvci1ib3VuZGFyeVwiO1xuY29uc3QgX19uZXh0X2FwcF9yZXF1aXJlX18gPSBfX3dlYnBhY2tfcmVxdWlyZV9fXG5jb25zdCBfX25leHRfYXBwX2xvYWRfY2h1bmtfXyA9ICgpID0+IFByb21pc2UucmVzb2x2ZSgpXG5leHBvcnQgY29uc3QgX19uZXh0X2FwcF9fID0ge1xuICAgIHJlcXVpcmU6IF9fbmV4dF9hcHBfcmVxdWlyZV9fLFxuICAgIGxvYWRDaHVuazogX19uZXh0X2FwcF9sb2FkX2NodW5rX19cbn07XG5leHBvcnQgKiBmcm9tIFwibmV4dC9kaXN0L3NlcnZlci9hcHAtcmVuZGVyL2VudHJ5LWJhc2VcIjtcbi8vIENyZWF0ZSBhbmQgZXhwb3J0IHRoZSByb3V0ZSBtb2R1bGUgdGhhdCB3aWxsIGJlIGNvbnN1bWVkLlxuZXhwb3J0IGNvbnN0IHJvdXRlTW9kdWxlID0gbmV3IEFwcFBhZ2VSb3V0ZU1vZHVsZSh7XG4gICAgZGVmaW5pdGlvbjoge1xuICAgICAgICBraW5kOiBSb3V0ZUtpbmQuQVBQX1BBR0UsXG4gICAgICAgIHBhZ2U6IFwiL19ub3QtZm91bmQvcGFnZVwiLFxuICAgICAgICBwYXRobmFtZTogXCIvX25vdC1mb3VuZFwiLFxuICAgICAgICAvLyBUaGUgZm9sbG93aW5nIGFyZW4ndCB1c2VkIGluIHByb2R1Y3Rpb24uXG4gICAgICAgIGJ1bmRsZVBhdGg6ICcnLFxuICAgICAgICBmaWxlbmFtZTogJycsXG4gICAgICAgIGFwcFBhdGhzOiBbXVxuICAgIH0sXG4gICAgdXNlcmxhbmQ6IHtcbiAgICAgICAgbG9hZGVyVHJlZTogdHJlZVxuICAgIH1cbn0pO1xuXG4vLyMgc291cmNlTWFwcGluZ1VSTD1hcHAtcGFnZS5qcy5tYXAiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2F_not-found%2Fpage&page=%2F_not-found%2Fpage&appPaths=&pagePath=..%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!\n");
+
+/***/ }),
+
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fclient-page.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fclient-segment.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Ferror-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Flayout-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Frender-from-template-context.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Flib%2Fmetadata%2Fmetadata-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&server=true!":
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fclient-page.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fclient-segment.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Ferror-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Flayout-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Frender-from-template-context.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Flib%2Fmetadata%2Fmetadata-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&server=true! ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/client-page.js */ \"(ssr)/./node_modules/next/dist/client/components/client-page.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/client-segment.js */ \"(ssr)/./node_modules/next/dist/client/components/client-segment.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/error-boundary.js */ \"(ssr)/./node_modules/next/dist/client/components/error-boundary.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/layout-router.js */ \"(ssr)/./node_modules/next/dist/client/components/layout-router.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/not-found-boundary.js */ \"(ssr)/./node_modules/next/dist/client/components/not-found-boundary.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/components/render-from-template-context.js */ \"(ssr)/./node_modules/next/dist/client/components/render-from-template-context.js\", 23));\n;\nPromise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/lib/metadata/metadata-boundary.js */ \"(ssr)/./node_modules/next/dist/lib/metadata/metadata-boundary.js\", 23));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMiUyRmhvbWUlMkZkYW5pc2glMkZEZXNrdG9wJTJGbnV0cmljb3VudCUyRmZyb250ZW5kJTJGbm9kZV9tb2R1bGVzJTJGbmV4dCUyRmRpc3QlMkZjbGllbnQlMkZjb21wb25lbnRzJTJGY2xpZW50LXBhZ2UuanMlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyJTJGaG9tZSUyRmRhbmlzaCUyRkRlc2t0b3AlMkZudXRyaWNvdW50JTJGZnJvbnRlbmQlMkZub2RlX21vZHVsZXMlMkZuZXh0JTJGZGlzdCUyRmNsaWVudCUyRmNvbXBvbmVudHMlMkZjbGllbnQtc2VnbWVudC5qcyUyMiUyQyUyMmlkcyUyMiUzQSU1QiU1RCU3RCZtb2R1bGVzPSU3QiUyMnJlcXVlc3QlMjIlM0ElMjIlMkZob21lJTJGZGFuaXNoJTJGRGVza3RvcCUyRm51dHJpY291bnQlMkZmcm9udGVuZCUyRm5vZGVfbW9kdWxlcyUyRm5leHQlMkZkaXN0JTJGY2xpZW50JTJGY29tcG9uZW50cyUyRmVycm9yLWJvdW5kYXJ5LmpzJTIyJTJDJTIyaWRzJTIyJTNBJTVCJTVEJTdEJm1vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMiUyRmhvbWUlMkZkYW5pc2glMkZEZXNrdG9wJTJGbnV0cmljb3VudCUyRmZyb250ZW5kJTJGbm9kZV9tb2R1bGVzJTJGbmV4dCUyRmRpc3QlMkZjbGllbnQlMkZjb21wb25lbnRzJTJGbGF5b3V0LXJvdXRlci5qcyUyMiUyQyUyMmlkcyUyMiUzQSU1QiU1RCU3RCZtb2R1bGVzPSU3QiUyMnJlcXVlc3QlMjIlM0ElMjIlMkZob21lJTJGZGFuaXNoJTJGRGVza3RvcCUyRm51dHJpY291bnQlMkZmcm9udGVuZCUyRm5vZGVfbW9kdWxlcyUyRm5leHQlMkZkaXN0JTJGY2xpZW50JTJGY29tcG9uZW50cyUyRm5vdC1mb3VuZC1ib3VuZGFyeS5qcyUyMiUyQyUyMmlkcyUyMiUzQSU1QiU1RCU3RCZtb2R1bGVzPSU3QiUyMnJlcXVlc3QlMjIlM0ElMjIlMkZob21lJTJGZGFuaXNoJTJGRGVza3RvcCUyRm51dHJpY291bnQlMkZmcm9udGVuZCUyRm5vZGVfbW9kdWxlcyUyRm5leHQlMkZkaXN0JTJGY2xpZW50JTJGY29tcG9uZW50cyUyRnJlbmRlci1mcm9tLXRlbXBsYXRlLWNvbnRleHQuanMlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyJTJGaG9tZSUyRmRhbmlzaCUyRkRlc2t0b3AlMkZudXRyaWNvdW50JTJGZnJvbnRlbmQlMkZub2RlX21vZHVsZXMlMkZuZXh0JTJGZGlzdCUyRmxpYiUyRm1ldGFkYXRhJTJGbWV0YWRhdGEtYm91bmRhcnkuanMlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0Qmc2VydmVyPXRydWUhIiwibWFwcGluZ3MiOiJBQUFBLG9PQUFxSTtBQUNySTtBQUNBLDBPQUF3STtBQUN4STtBQUNBLDBPQUF3STtBQUN4STtBQUNBLHdPQUF1STtBQUN2STtBQUNBLGtQQUE0STtBQUM1STtBQUNBLHNRQUFzSjtBQUN0SjtBQUNBLHNPQUFzSSIsInNvdXJjZXMiOlsid2VicGFjazovL251dHJpY291bnQtZnJvbnRlbmQvP2NiMTgiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCIvaG9tZS9kYW5pc2gvRGVza3RvcC9udXRyaWNvdW50L2Zyb250ZW5kL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY2xpZW50L2NvbXBvbmVudHMvY2xpZW50LXBhZ2UuanNcIik7XG47XG5pbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIi9ob21lL2RhbmlzaC9EZXNrdG9wL251dHJpY291bnQvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL25leHQvZGlzdC9jbGllbnQvY29tcG9uZW50cy9jbGllbnQtc2VnbWVudC5qc1wiKTtcbjtcbmltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiL2hvbWUvZGFuaXNoL0Rlc2t0b3AvbnV0cmljb3VudC9mcm9udGVuZC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NsaWVudC9jb21wb25lbnRzL2Vycm9yLWJvdW5kYXJ5LmpzXCIpO1xuO1xuaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCIvaG9tZS9kYW5pc2gvRGVza3RvcC9udXRyaWNvdW50L2Zyb250ZW5kL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY2xpZW50L2NvbXBvbmVudHMvbGF5b3V0LXJvdXRlci5qc1wiKTtcbjtcbmltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiL2hvbWUvZGFuaXNoL0Rlc2t0b3AvbnV0cmljb3VudC9mcm9udGVuZC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NsaWVudC9jb21wb25lbnRzL25vdC1mb3VuZC1ib3VuZGFyeS5qc1wiKTtcbjtcbmltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiL2hvbWUvZGFuaXNoL0Rlc2t0b3AvbnV0cmljb3VudC9mcm9udGVuZC9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2NsaWVudC9jb21wb25lbnRzL3JlbmRlci1mcm9tLXRlbXBsYXRlLWNvbnRleHQuanNcIik7XG47XG5pbXBvcnQoLyogd2VicGFja01vZGU6IFwiZWFnZXJcIiAqLyBcIi9ob21lL2RhbmlzaC9EZXNrdG9wL251dHJpY291bnQvZnJvbnRlbmQvbm9kZV9tb2R1bGVzL25leHQvZGlzdC9saWIvbWV0YWRhdGEvbWV0YWRhdGEtYm91bmRhcnkuanNcIik7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fclient-page.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fclient-segment.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Ferror-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Flayout-router.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Frender-from-template-context.js%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Fdist%2Flib%2Fmetadata%2Fmetadata-boundary.js%22%2C%22ids%22%3A%5B%5D%7D&server=true!\n");
+
+/***/ }),
+
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Ffont%2Fgoogle%2Ftarget.css%3F%7B%5C%22path%5C%22%3A%5C%22src%2Fapp%2Flayout.tsx%5C%22%2C%5C%22import%5C%22%3A%5C%22Inter%5C%22%2C%5C%22arguments%5C%22%3A%5B%7B%5C%22subsets%5C%22%3A%5B%5C%22latin%5C%22%5D%7D%5D%2C%5C%22variableName%5C%22%3A%5C%22inter%5C%22%7D%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fapp%2Fglobals.css%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fproviders%2Findex.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true!":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Ffont%2Fgoogle%2Ftarget.css%3F%7B%5C%22path%5C%22%3A%5C%22src%2Fapp%2Flayout.tsx%5C%22%2C%5C%22import%5C%22%3A%5C%22Inter%5C%22%2C%5C%22arguments%5C%22%3A%5B%7B%5C%22subsets%5C%22%3A%5B%5C%22latin%5C%22%5D%7D%5D%2C%5C%22variableName%5C%22%3A%5C%22inter%5C%22%7D%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fapp%2Fglobals.css%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fproviders%2Findex.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true! ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./src/providers/index.tsx */ \"(ssr)/./src/providers/index.tsx\"));\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMiUyRmhvbWUlMkZkYW5pc2glMkZEZXNrdG9wJTJGbnV0cmljb3VudCUyRmZyb250ZW5kJTJGbm9kZV9tb2R1bGVzJTJGbmV4dCUyRmZvbnQlMkZnb29nbGUlMkZ0YXJnZXQuY3NzJTNGJTdCJTVDJTIycGF0aCU1QyUyMiUzQSU1QyUyMnNyYyUyRmFwcCUyRmxheW91dC50c3glNUMlMjIlMkMlNUMlMjJpbXBvcnQlNUMlMjIlM0ElNUMlMjJJbnRlciU1QyUyMiUyQyU1QyUyMmFyZ3VtZW50cyU1QyUyMiUzQSU1QiU3QiU1QyUyMnN1YnNldHMlNUMlMjIlM0ElNUIlNUMlMjJsYXRpbiU1QyUyMiU1RCU3RCU1RCUyQyU1QyUyMnZhcmlhYmxlTmFtZSU1QyUyMiUzQSU1QyUyMmludGVyJTVDJTIyJTdEJTIyJTJDJTIyaWRzJTIyJTNBJTVCJTVEJTdEJm1vZHVsZXM9JTdCJTIycmVxdWVzdCUyMiUzQSUyMiUyRmhvbWUlMkZkYW5pc2glMkZEZXNrdG9wJTJGbnV0cmljb3VudCUyRmZyb250ZW5kJTJGc3JjJTJGYXBwJTJGZ2xvYmFscy5jc3MlMjIlMkMlMjJpZHMlMjIlM0ElNUIlNUQlN0QmbW9kdWxlcz0lN0IlMjJyZXF1ZXN0JTIyJTNBJTIyJTJGaG9tZSUyRmRhbmlzaCUyRkRlc2t0b3AlMkZudXRyaWNvdW50JTJGZnJvbnRlbmQlMkZzcmMlMkZwcm92aWRlcnMlMkZpbmRleC50c3glMjIlMkMlMjJpZHMlMjIlM0ElNUIlMjJkZWZhdWx0JTIyJTVEJTdEJnNlcnZlcj10cnVlISIsIm1hcHBpbmdzIjoiQUFBQSw4SkFBa0kiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9udXRyaWNvdW50LWZyb250ZW5kLz80ZTEyIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiLCB3ZWJwYWNrRXhwb3J0czogW1wiZGVmYXVsdFwiXSAqLyBcIi9ob21lL2RhbmlzaC9EZXNrdG9wL251dHJpY291bnQvZnJvbnRlbmQvc3JjL3Byb3ZpZGVycy9pbmRleC50c3hcIik7XG4iXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fnode_modules%2Fnext%2Ffont%2Fgoogle%2Ftarget.css%3F%7B%5C%22path%5C%22%3A%5C%22src%2Fapp%2Flayout.tsx%5C%22%2C%5C%22import%5C%22%3A%5C%22Inter%5C%22%2C%5C%22arguments%5C%22%3A%5B%7B%5C%22subsets%5C%22%3A%5B%5C%22latin%5C%22%5D%7D%5D%2C%5C%22variableName%5C%22%3A%5C%22inter%5C%22%7D%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fapp%2Fglobals.css%22%2C%22ids%22%3A%5B%5D%7D&modules=%7B%22request%22%3A%22%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fproviders%2Findex.tsx%22%2C%22ids%22%3A%5B%22default%22%5D%7D&server=true!\n");
+
+/***/ }),
+
+/***/ "(ssr)/./src/lib/axios.ts":
+/*!**************************!*\
+  !*** ./src/lib/axios.ts ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ \"(ssr)/./node_modules/axios/lib/axios.js\");\n\nconst api = axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"].create({\n    baseURL: \"http://localhost:5000/api/v1\",\n    withCredentials: true\n});\nlet isRefreshing = false;\nlet failedQueue = [];\nconst processQueue = (error, token = null)=>{\n    failedQueue.forEach((prom)=>{\n        if (error) {\n            prom.reject(error);\n        } else {\n            prom.resolve(token);\n        }\n    });\n    failedQueue = [];\n};\napi.interceptors.request.use((config)=>{\n    const token = localStorage.getItem('accessToken');\n    if (token) {\n        config.headers.Authorization = `Bearer ${token}`;\n    }\n    return config;\n}, (error)=>Promise.reject(error));\napi.interceptors.response.use((response)=>response, async (error)=>{\n    const originalRequest = error.config;\n    if (error.response?.status === 401 && !originalRequest._retry) {\n        if (isRefreshing) {\n            return new Promise((resolve, reject)=>{\n                failedQueue.push({\n                    resolve,\n                    reject\n                });\n            }).then((token)=>{\n                originalRequest.headers.Authorization = `Bearer ${token}`;\n                return api(originalRequest);\n            }).catch((err)=>Promise.reject(err));\n        }\n        originalRequest._retry = true;\n        isRefreshing = true;\n        try {\n            const response = await axios__WEBPACK_IMPORTED_MODULE_0__[\"default\"].post(`${\"http://localhost:5000/api/v1\"}/auth/refresh`, {}, {\n                withCredentials: true\n            });\n            const { accessToken } = response.data;\n            localStorage.setItem('accessToken', accessToken);\n            api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;\n            processQueue(null, accessToken);\n            return api(originalRequest);\n        } catch (refreshError) {\n            processQueue(refreshError, null);\n            localStorage.removeItem('accessToken');\n            // Optional: Redirect to login or clear auth state\n            return Promise.reject(refreshError);\n        } finally{\n            isRefreshing = false;\n        }\n    }\n    return Promise.reject(error);\n});\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (api);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvbGliL2F4aW9zLnRzIiwibWFwcGluZ3MiOiI7Ozs7O0FBQTBCO0FBRTFCLE1BQU1DLE1BQU1ELDZDQUFLQSxDQUFDRSxNQUFNLENBQUM7SUFDdkJDLFNBQVNDLDhCQUErQjtJQUN4Q0csaUJBQWlCO0FBQ25CO0FBRUEsSUFBSUMsZUFBZTtBQUNuQixJQUFJQyxjQUFxQixFQUFFO0FBRTNCLE1BQU1DLGVBQWUsQ0FBQ0MsT0FBWUMsUUFBdUIsSUFBSTtJQUMzREgsWUFBWUksT0FBTyxDQUFDLENBQUNDO1FBQ25CLElBQUlILE9BQU87WUFDVEcsS0FBS0MsTUFBTSxDQUFDSjtRQUNkLE9BQU87WUFDTEcsS0FBS0UsT0FBTyxDQUFDSjtRQUNmO0lBQ0Y7SUFFQUgsY0FBYyxFQUFFO0FBQ2xCO0FBRUFSLElBQUlnQixZQUFZLENBQUNDLE9BQU8sQ0FBQ0MsR0FBRyxDQUMxQixDQUFDQztJQUNDLE1BQU1SLFFBQVFTLGFBQWFDLE9BQU8sQ0FBQztJQUNuQyxJQUFJVixPQUFPO1FBQ1RRLE9BQU9HLE9BQU8sQ0FBQ0MsYUFBYSxHQUFHLENBQUMsT0FBTyxFQUFFWixPQUFPO0lBQ2xEO0lBQ0EsT0FBT1E7QUFDVCxHQUNBLENBQUNULFFBQVVjLFFBQVFWLE1BQU0sQ0FBQ0o7QUFHNUJWLElBQUlnQixZQUFZLENBQUNTLFFBQVEsQ0FBQ1AsR0FBRyxDQUMzQixDQUFDTyxXQUFhQSxVQUNkLE9BQU9mO0lBQ0wsTUFBTWdCLGtCQUFrQmhCLE1BQU1TLE1BQU07SUFFcEMsSUFBSVQsTUFBTWUsUUFBUSxFQUFFRSxXQUFXLE9BQU8sQ0FBQ0QsZ0JBQWdCRSxNQUFNLEVBQUU7UUFDN0QsSUFBSXJCLGNBQWM7WUFDaEIsT0FBTyxJQUFJaUIsUUFBUSxDQUFDVCxTQUFTRDtnQkFDM0JOLFlBQVlxQixJQUFJLENBQUM7b0JBQUVkO29CQUFTRDtnQkFBTztZQUNyQyxHQUNHZ0IsSUFBSSxDQUFDLENBQUNuQjtnQkFDTGUsZ0JBQWdCSixPQUFPLENBQUNDLGFBQWEsR0FBRyxDQUFDLE9BQU8sRUFBRVosT0FBTztnQkFDekQsT0FBT1gsSUFBSTBCO1lBQ2IsR0FDQ0ssS0FBSyxDQUFDLENBQUNDLE1BQVFSLFFBQVFWLE1BQU0sQ0FBQ2tCO1FBQ25DO1FBRUFOLGdCQUFnQkUsTUFBTSxHQUFHO1FBQ3pCckIsZUFBZTtRQUVmLElBQUk7WUFDRixNQUFNa0IsV0FBVyxNQUFNMUIsNkNBQUtBLENBQUNrQyxJQUFJLENBQy9CLEdBQUc5Qiw4QkFBK0IsQ0FBQyxhQUFhLENBQUMsRUFDakQsQ0FBQyxHQUNEO2dCQUFFRyxpQkFBaUI7WUFBSztZQUcxQixNQUFNLEVBQUU0QixXQUFXLEVBQUUsR0FBR1QsU0FBU1UsSUFBSTtZQUNyQ2YsYUFBYWdCLE9BQU8sQ0FBQyxlQUFlRjtZQUVwQ2xDLElBQUlxQyxRQUFRLENBQUNmLE9BQU8sQ0FBQ2dCLE1BQU0sQ0FBQ2YsYUFBYSxHQUFHLENBQUMsT0FBTyxFQUFFVyxhQUFhO1lBQ25FekIsYUFBYSxNQUFNeUI7WUFFbkIsT0FBT2xDLElBQUkwQjtRQUNiLEVBQUUsT0FBT2EsY0FBYztZQUNyQjlCLGFBQWE4QixjQUFjO1lBQzNCbkIsYUFBYW9CLFVBQVUsQ0FBQztZQUN4QixrREFBa0Q7WUFDbEQsT0FBT2hCLFFBQVFWLE1BQU0sQ0FBQ3lCO1FBQ3hCLFNBQVU7WUFDUmhDLGVBQWU7UUFDakI7SUFDRjtJQUVBLE9BQU9pQixRQUFRVixNQUFNLENBQUNKO0FBQ3hCO0FBR0YsaUVBQWVWLEdBQUdBLEVBQUMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9udXRyaWNvdW50LWZyb250ZW5kLy4vc3JjL2xpYi9heGlvcy50cz9lODg1Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBheGlvcyBmcm9tICdheGlvcyc7XG5cbmNvbnN0IGFwaSA9IGF4aW9zLmNyZWF0ZSh7XG4gIGJhc2VVUkw6IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX0FQSV9VUkwsXG4gIHdpdGhDcmVkZW50aWFsczogdHJ1ZSwgLy8gU2VuZCBjb29raWVzIHdpdGggcmVxdWVzdHNcbn0pO1xuXG5sZXQgaXNSZWZyZXNoaW5nID0gZmFsc2U7XG5sZXQgZmFpbGVkUXVldWU6IGFueVtdID0gW107XG5cbmNvbnN0IHByb2Nlc3NRdWV1ZSA9IChlcnJvcjogYW55LCB0b2tlbjogc3RyaW5nIHwgbnVsbCA9IG51bGwpID0+IHtcbiAgZmFpbGVkUXVldWUuZm9yRWFjaCgocHJvbSkgPT4ge1xuICAgIGlmIChlcnJvcikge1xuICAgICAgcHJvbS5yZWplY3QoZXJyb3IpO1xuICAgIH0gZWxzZSB7XG4gICAgICBwcm9tLnJlc29sdmUodG9rZW4pO1xuICAgIH1cbiAgfSk7XG5cbiAgZmFpbGVkUXVldWUgPSBbXTtcbn07XG5cbmFwaS5pbnRlcmNlcHRvcnMucmVxdWVzdC51c2UoXG4gIChjb25maWcpID0+IHtcbiAgICBjb25zdCB0b2tlbiA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdhY2Nlc3NUb2tlbicpO1xuICAgIGlmICh0b2tlbikge1xuICAgICAgY29uZmlnLmhlYWRlcnMuQXV0aG9yaXphdGlvbiA9IGBCZWFyZXIgJHt0b2tlbn1gO1xuICAgIH1cbiAgICByZXR1cm4gY29uZmlnO1xuICB9LFxuICAoZXJyb3IpID0+IFByb21pc2UucmVqZWN0KGVycm9yKVxuKTtcblxuYXBpLmludGVyY2VwdG9ycy5yZXNwb25zZS51c2UoXG4gIChyZXNwb25zZSkgPT4gcmVzcG9uc2UsXG4gIGFzeW5jIChlcnJvcikgPT4ge1xuICAgIGNvbnN0IG9yaWdpbmFsUmVxdWVzdCA9IGVycm9yLmNvbmZpZztcblxuICAgIGlmIChlcnJvci5yZXNwb25zZT8uc3RhdHVzID09PSA0MDEgJiYgIW9yaWdpbmFsUmVxdWVzdC5fcmV0cnkpIHtcbiAgICAgIGlmIChpc1JlZnJlc2hpbmcpIHtcbiAgICAgICAgcmV0dXJuIG5ldyBQcm9taXNlKChyZXNvbHZlLCByZWplY3QpID0+IHtcbiAgICAgICAgICBmYWlsZWRRdWV1ZS5wdXNoKHsgcmVzb2x2ZSwgcmVqZWN0IH0pO1xuICAgICAgICB9KVxuICAgICAgICAgIC50aGVuKCh0b2tlbikgPT4ge1xuICAgICAgICAgICAgb3JpZ2luYWxSZXF1ZXN0LmhlYWRlcnMuQXV0aG9yaXphdGlvbiA9IGBCZWFyZXIgJHt0b2tlbn1gO1xuICAgICAgICAgICAgcmV0dXJuIGFwaShvcmlnaW5hbFJlcXVlc3QpO1xuICAgICAgICAgIH0pXG4gICAgICAgICAgLmNhdGNoKChlcnIpID0+IFByb21pc2UucmVqZWN0KGVycikpO1xuICAgICAgfVxuXG4gICAgICBvcmlnaW5hbFJlcXVlc3QuX3JldHJ5ID0gdHJ1ZTtcbiAgICAgIGlzUmVmcmVzaGluZyA9IHRydWU7XG5cbiAgICAgIHRyeSB7XG4gICAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgYXhpb3MucG9zdChcbiAgICAgICAgICBgJHtwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19BUElfVVJMfS9hdXRoL3JlZnJlc2hgLFxuICAgICAgICAgIHt9LFxuICAgICAgICAgIHsgd2l0aENyZWRlbnRpYWxzOiB0cnVlIH1cbiAgICAgICAgKTtcblxuICAgICAgICBjb25zdCB7IGFjY2Vzc1Rva2VuIH0gPSByZXNwb25zZS5kYXRhO1xuICAgICAgICBsb2NhbFN0b3JhZ2Uuc2V0SXRlbSgnYWNjZXNzVG9rZW4nLCBhY2Nlc3NUb2tlbik7XG5cbiAgICAgICAgYXBpLmRlZmF1bHRzLmhlYWRlcnMuY29tbW9uLkF1dGhvcml6YXRpb24gPSBgQmVhcmVyICR7YWNjZXNzVG9rZW59YDtcbiAgICAgICAgcHJvY2Vzc1F1ZXVlKG51bGwsIGFjY2Vzc1Rva2VuKTtcblxuICAgICAgICByZXR1cm4gYXBpKG9yaWdpbmFsUmVxdWVzdCk7XG4gICAgICB9IGNhdGNoIChyZWZyZXNoRXJyb3IpIHtcbiAgICAgICAgcHJvY2Vzc1F1ZXVlKHJlZnJlc2hFcnJvciwgbnVsbCk7XG4gICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdhY2Nlc3NUb2tlbicpO1xuICAgICAgICAvLyBPcHRpb25hbDogUmVkaXJlY3QgdG8gbG9naW4gb3IgY2xlYXIgYXV0aCBzdGF0ZVxuICAgICAgICByZXR1cm4gUHJvbWlzZS5yZWplY3QocmVmcmVzaEVycm9yKTtcbiAgICAgIH0gZmluYWxseSB7XG4gICAgICAgIGlzUmVmcmVzaGluZyA9IGZhbHNlO1xuICAgICAgfVxuICAgIH1cblxuICAgIHJldHVybiBQcm9taXNlLnJlamVjdChlcnJvcik7XG4gIH1cbik7XG5cbmV4cG9ydCBkZWZhdWx0IGFwaTtcbiJdLCJuYW1lcyI6WyJheGlvcyIsImFwaSIsImNyZWF0ZSIsImJhc2VVUkwiLCJwcm9jZXNzIiwiZW52IiwiTkVYVF9QVUJMSUNfQVBJX1VSTCIsIndpdGhDcmVkZW50aWFscyIsImlzUmVmcmVzaGluZyIsImZhaWxlZFF1ZXVlIiwicHJvY2Vzc1F1ZXVlIiwiZXJyb3IiLCJ0b2tlbiIsImZvckVhY2giLCJwcm9tIiwicmVqZWN0IiwicmVzb2x2ZSIsImludGVyY2VwdG9ycyIsInJlcXVlc3QiLCJ1c2UiLCJjb25maWciLCJsb2NhbFN0b3JhZ2UiLCJnZXRJdGVtIiwiaGVhZGVycyIsIkF1dGhvcml6YXRpb24iLCJQcm9taXNlIiwicmVzcG9uc2UiLCJvcmlnaW5hbFJlcXVlc3QiLCJzdGF0dXMiLCJfcmV0cnkiLCJwdXNoIiwidGhlbiIsImNhdGNoIiwiZXJyIiwicG9zdCIsImFjY2Vzc1Rva2VuIiwiZGF0YSIsInNldEl0ZW0iLCJkZWZhdWx0cyIsImNvbW1vbiIsInJlZnJlc2hFcnJvciIsInJlbW92ZUl0ZW0iXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./src/lib/axios.ts\n");
+
+/***/ }),
+
+/***/ "(ssr)/./src/providers/auth-provider.tsx":
+/*!*****************************************!*\
+  !*** ./src/providers/auth-provider.tsx ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   AuthProvider: () => (/* binding */ AuthProvider),\n/* harmony export */   useAuth: () => (/* binding */ useAuth)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _lib_axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/lib/axios */ \"(ssr)/./src/lib/axios.ts\");\n/* harmony import */ var next_navigation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/navigation */ \"(ssr)/./node_modules/next/dist/api/navigation.js\");\n/* __next_internal_client_entry_do_not_use__ AuthProvider,useAuth auto */ \n\n\n\nconst AuthContext = /*#__PURE__*/ (0,react__WEBPACK_IMPORTED_MODULE_1__.createContext)(undefined);\nconst AuthProvider = ({ children })=>{\n    const [user, setUser] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(null);\n    const [isLoading, setIsLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);\n    const router = (0,next_navigation__WEBPACK_IMPORTED_MODULE_3__.useRouter)();\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        const checkAuth = async ()=>{\n            try {\n                const response = await _lib_axios__WEBPACK_IMPORTED_MODULE_2__[\"default\"].get('/auth/me');\n                setUser(response.data.user);\n            } catch (error) {\n                setUser(null);\n                localStorage.removeItem('accessToken');\n            } finally{\n                setIsLoading(false);\n            }\n        };\n        if (localStorage.getItem('accessToken')) {\n            checkAuth();\n        } else {\n            setIsLoading(false);\n        }\n    }, []);\n    const login = async (idToken)=>{\n        try {\n            const response = await _lib_axios__WEBPACK_IMPORTED_MODULE_2__[\"default\"].post('/auth/google', {\n                idToken\n            });\n            const { user, accessToken } = response.data;\n            localStorage.setItem('accessToken', accessToken);\n            setUser(user);\n            router.push('/dashboard');\n        } catch (error) {\n            console.error('Login failed', error);\n            throw error;\n        }\n    };\n    const logout = async ()=>{\n        try {\n            await _lib_axios__WEBPACK_IMPORTED_MODULE_2__[\"default\"].post('/auth/logout');\n        } finally{\n            localStorage.removeItem('accessToken');\n            setUser(null);\n            router.push('/login');\n        }\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(AuthContext.Provider, {\n        value: {\n            user,\n            isLoading,\n            login,\n            logout,\n            isAuthenticated: !!user\n        },\n        children: children\n    }, void 0, false, {\n        fileName: \"/home/danish/Desktop/nutricount/frontend/src/providers/auth-provider.tsx\",\n        lineNumber: 74,\n        columnNumber: 5\n    }, undefined);\n};\nconst useAuth = ()=>{\n    const context = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(AuthContext);\n    if (context === undefined) {\n        throw new Error('useAuth must be used within an AuthProvider');\n    }\n    return context;\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvcHJvdmlkZXJzL2F1dGgtcHJvdmlkZXIudHN4IiwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQUU4RTtBQUNoRDtBQUNjO0FBaUI1QyxNQUFNTyw0QkFBY04sb0RBQWFBLENBQThCTztBQUV4RCxNQUFNQyxlQUF3RCxDQUFDLEVBQUVDLFFBQVEsRUFBRTtJQUNoRixNQUFNLENBQUNDLE1BQU1DLFFBQVEsR0FBR1IsK0NBQVFBLENBQWM7SUFDOUMsTUFBTSxDQUFDUyxXQUFXQyxhQUFhLEdBQUdWLCtDQUFRQSxDQUFDO0lBQzNDLE1BQU1XLFNBQVNULDBEQUFTQTtJQUV4QkgsZ0RBQVNBLENBQUM7UUFDUixNQUFNYSxZQUFZO1lBQ2hCLElBQUk7Z0JBQ0YsTUFBTUMsV0FBVyxNQUFNWixrREFBR0EsQ0FBQ2EsR0FBRyxDQUFDO2dCQUMvQk4sUUFBUUssU0FBU0UsSUFBSSxDQUFDUixJQUFJO1lBQzVCLEVBQUUsT0FBT1MsT0FBTztnQkFDZFIsUUFBUTtnQkFDUlMsYUFBYUMsVUFBVSxDQUFDO1lBQzFCLFNBQVU7Z0JBQ1JSLGFBQWE7WUFDZjtRQUNGO1FBRUEsSUFBSU8sYUFBYUUsT0FBTyxDQUFDLGdCQUFnQjtZQUN2Q1A7UUFDRixPQUFPO1lBQ0xGLGFBQWE7UUFDZjtJQUNGLEdBQUcsRUFBRTtJQUVMLE1BQU1VLFFBQVEsT0FBT0M7UUFDbkIsSUFBSTtZQUNGLE1BQU1SLFdBQVcsTUFBTVosa0RBQUdBLENBQUNxQixJQUFJLENBQUMsZ0JBQWdCO2dCQUFFRDtZQUFRO1lBQzFELE1BQU0sRUFBRWQsSUFBSSxFQUFFZ0IsV0FBVyxFQUFFLEdBQUdWLFNBQVNFLElBQUk7WUFFM0NFLGFBQWFPLE9BQU8sQ0FBQyxlQUFlRDtZQUNwQ2YsUUFBUUQ7WUFDUkksT0FBT2MsSUFBSSxDQUFDO1FBQ2QsRUFBRSxPQUFPVCxPQUFPO1lBQ2RVLFFBQVFWLEtBQUssQ0FBQyxnQkFBZ0JBO1lBQzlCLE1BQU1BO1FBQ1I7SUFDRjtJQUVBLE1BQU1XLFNBQVM7UUFDYixJQUFJO1lBQ0YsTUFBTTFCLGtEQUFHQSxDQUFDcUIsSUFBSSxDQUFDO1FBQ2pCLFNBQVU7WUFDUkwsYUFBYUMsVUFBVSxDQUFDO1lBQ3hCVixRQUFRO1lBQ1JHLE9BQU9jLElBQUksQ0FBQztRQUNkO0lBQ0Y7SUFFQSxxQkFDRSw4REFBQ3RCLFlBQVl5QixRQUFRO1FBQUNDLE9BQU87WUFBRXRCO1lBQU1FO1lBQVdXO1lBQU9PO1lBQVFHLGlCQUFpQixDQUFDLENBQUN2QjtRQUFLO2tCQUNwRkQ7Ozs7OztBQUdQLEVBQUU7QUFFSyxNQUFNeUIsVUFBVTtJQUNyQixNQUFNQyxVQUFVbEMsaURBQVVBLENBQUNLO0lBQzNCLElBQUk2QixZQUFZNUIsV0FBVztRQUN6QixNQUFNLElBQUk2QixNQUFNO0lBQ2xCO0lBQ0EsT0FBT0Q7QUFDVCxFQUFFIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbnV0cmljb3VudC1mcm9udGVuZC8uL3NyYy9wcm92aWRlcnMvYXV0aC1wcm92aWRlci50c3g/NTRhMSJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGNsaWVudCc7XG5cbmltcG9ydCBSZWFjdCwgeyBjcmVhdGVDb250ZXh0LCB1c2VDb250ZXh0LCB1c2VFZmZlY3QsIHVzZVN0YXRlIH0gZnJvbSAncmVhY3QnO1xuaW1wb3J0IGFwaSBmcm9tICdAL2xpYi9heGlvcyc7XG5pbXBvcnQgeyB1c2VSb3V0ZXIgfSBmcm9tICduZXh0L25hdmlnYXRpb24nO1xuXG5pbnRlcmZhY2UgVXNlciB7XG4gIGlkOiBzdHJpbmc7XG4gIGVtYWlsOiBzdHJpbmc7XG4gIG5hbWU6IHN0cmluZztcbiAgYXZhdGFyVXJsOiBzdHJpbmc7XG59XG5cbmludGVyZmFjZSBBdXRoQ29udGV4dFR5cGUge1xuICB1c2VyOiBVc2VyIHwgbnVsbDtcbiAgaXNMb2FkaW5nOiBib29sZWFuO1xuICBsb2dpbjogKGlkVG9rZW46IHN0cmluZykgPT4gUHJvbWlzZTx2b2lkPjtcbiAgbG9nb3V0OiAoKSA9PiBQcm9taXNlPHZvaWQ+O1xuICBpc0F1dGhlbnRpY2F0ZWQ6IGJvb2xlYW47XG59XG5cbmNvbnN0IEF1dGhDb250ZXh0ID0gY3JlYXRlQ29udGV4dDxBdXRoQ29udGV4dFR5cGUgfCB1bmRlZmluZWQ+KHVuZGVmaW5lZCk7XG5cbmV4cG9ydCBjb25zdCBBdXRoUHJvdmlkZXI6IFJlYWN0LkZDPHsgY2hpbGRyZW46IFJlYWN0LlJlYWN0Tm9kZSB9PiA9ICh7IGNoaWxkcmVuIH0pID0+IHtcbiAgY29uc3QgW3VzZXIsIHNldFVzZXJdID0gdXNlU3RhdGU8VXNlciB8IG51bGw+KG51bGwpO1xuICBjb25zdCBbaXNMb2FkaW5nLCBzZXRJc0xvYWRpbmddID0gdXNlU3RhdGUodHJ1ZSk7XG4gIGNvbnN0IHJvdXRlciA9IHVzZVJvdXRlcigpO1xuXG4gIHVzZUVmZmVjdCgoKSA9PiB7XG4gICAgY29uc3QgY2hlY2tBdXRoID0gYXN5bmMgKCkgPT4ge1xuICAgICAgdHJ5IHtcbiAgICAgICAgY29uc3QgcmVzcG9uc2UgPSBhd2FpdCBhcGkuZ2V0KCcvYXV0aC9tZScpO1xuICAgICAgICBzZXRVc2VyKHJlc3BvbnNlLmRhdGEudXNlcik7XG4gICAgICB9IGNhdGNoIChlcnJvcikge1xuICAgICAgICBzZXRVc2VyKG51bGwpO1xuICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgnYWNjZXNzVG9rZW4nKTtcbiAgICAgIH0gZmluYWxseSB7XG4gICAgICAgIHNldElzTG9hZGluZyhmYWxzZSk7XG4gICAgICB9XG4gICAgfTtcblxuICAgIGlmIChsb2NhbFN0b3JhZ2UuZ2V0SXRlbSgnYWNjZXNzVG9rZW4nKSkge1xuICAgICAgY2hlY2tBdXRoKCk7XG4gICAgfSBlbHNlIHtcbiAgICAgIHNldElzTG9hZGluZyhmYWxzZSk7XG4gICAgfVxuICB9LCBbXSk7XG5cbiAgY29uc3QgbG9naW4gPSBhc3luYyAoaWRUb2tlbjogc3RyaW5nKSA9PiB7XG4gICAgdHJ5IHtcbiAgICAgIGNvbnN0IHJlc3BvbnNlID0gYXdhaXQgYXBpLnBvc3QoJy9hdXRoL2dvb2dsZScsIHsgaWRUb2tlbiB9KTtcbiAgICAgIGNvbnN0IHsgdXNlciwgYWNjZXNzVG9rZW4gfSA9IHJlc3BvbnNlLmRhdGE7XG4gICAgICBcbiAgICAgIGxvY2FsU3RvcmFnZS5zZXRJdGVtKCdhY2Nlc3NUb2tlbicsIGFjY2Vzc1Rva2VuKTtcbiAgICAgIHNldFVzZXIodXNlcik7XG4gICAgICByb3V0ZXIucHVzaCgnL2Rhc2hib2FyZCcpO1xuICAgIH0gY2F0Y2ggKGVycm9yKSB7XG4gICAgICBjb25zb2xlLmVycm9yKCdMb2dpbiBmYWlsZWQnLCBlcnJvcik7XG4gICAgICB0aHJvdyBlcnJvcjtcbiAgICB9XG4gIH07XG5cbiAgY29uc3QgbG9nb3V0ID0gYXN5bmMgKCkgPT4ge1xuICAgIHRyeSB7XG4gICAgICBhd2FpdCBhcGkucG9zdCgnL2F1dGgvbG9nb3V0Jyk7XG4gICAgfSBmaW5hbGx5IHtcbiAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdhY2Nlc3NUb2tlbicpO1xuICAgICAgc2V0VXNlcihudWxsKTtcbiAgICAgIHJvdXRlci5wdXNoKCcvbG9naW4nKTtcbiAgICB9XG4gIH07XG5cbiAgcmV0dXJuIChcbiAgICA8QXV0aENvbnRleHQuUHJvdmlkZXIgdmFsdWU9e3sgdXNlciwgaXNMb2FkaW5nLCBsb2dpbiwgbG9nb3V0LCBpc0F1dGhlbnRpY2F0ZWQ6ICEhdXNlciB9fT5cbiAgICAgIHtjaGlsZHJlbn1cbiAgICA8L0F1dGhDb250ZXh0LlByb3ZpZGVyPlxuICApO1xufTtcblxuZXhwb3J0IGNvbnN0IHVzZUF1dGggPSAoKSA9PiB7XG4gIGNvbnN0IGNvbnRleHQgPSB1c2VDb250ZXh0KEF1dGhDb250ZXh0KTtcbiAgaWYgKGNvbnRleHQgPT09IHVuZGVmaW5lZCkge1xuICAgIHRocm93IG5ldyBFcnJvcigndXNlQXV0aCBtdXN0IGJlIHVzZWQgd2l0aGluIGFuIEF1dGhQcm92aWRlcicpO1xuICB9XG4gIHJldHVybiBjb250ZXh0O1xufTtcbiJdLCJuYW1lcyI6WyJSZWFjdCIsImNyZWF0ZUNvbnRleHQiLCJ1c2VDb250ZXh0IiwidXNlRWZmZWN0IiwidXNlU3RhdGUiLCJhcGkiLCJ1c2VSb3V0ZXIiLCJBdXRoQ29udGV4dCIsInVuZGVmaW5lZCIsIkF1dGhQcm92aWRlciIsImNoaWxkcmVuIiwidXNlciIsInNldFVzZXIiLCJpc0xvYWRpbmciLCJzZXRJc0xvYWRpbmciLCJyb3V0ZXIiLCJjaGVja0F1dGgiLCJyZXNwb25zZSIsImdldCIsImRhdGEiLCJlcnJvciIsImxvY2FsU3RvcmFnZSIsInJlbW92ZUl0ZW0iLCJnZXRJdGVtIiwibG9naW4iLCJpZFRva2VuIiwicG9zdCIsImFjY2Vzc1Rva2VuIiwic2V0SXRlbSIsInB1c2giLCJjb25zb2xlIiwibG9nb3V0IiwiUHJvdmlkZXIiLCJ2YWx1ZSIsImlzQXV0aGVudGljYXRlZCIsInVzZUF1dGgiLCJjb250ZXh0IiwiRXJyb3IiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./src/providers/auth-provider.tsx\n");
+
+/***/ }),
+
+/***/ "(ssr)/./src/providers/index.tsx":
+/*!*********************************!*\
+  !*** ./src/providers/index.tsx ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Providers)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @tanstack/react-query */ \"(ssr)/./node_modules/@tanstack/query-core/build/modern/queryClient.js\");\n/* harmony import */ var _tanstack_react_query__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @tanstack/react-query */ \"(ssr)/./node_modules/@tanstack/react-query/build/modern/QueryClientProvider.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _auth_provider__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./auth-provider */ \"(ssr)/./src/providers/auth-provider.tsx\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\n\nfunction Providers({ children }) {\n    const [queryClient] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(()=>new _tanstack_react_query__WEBPACK_IMPORTED_MODULE_3__.QueryClient());\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_tanstack_react_query__WEBPACK_IMPORTED_MODULE_4__.QueryClientProvider, {\n        client: queryClient,\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_auth_provider__WEBPACK_IMPORTED_MODULE_2__.AuthProvider, {\n            children: children\n        }, void 0, false, {\n            fileName: \"/home/danish/Desktop/nutricount/frontend/src/providers/index.tsx\",\n            lineNumber: 12,\n            columnNumber: 7\n        }, this)\n    }, void 0, false, {\n        fileName: \"/home/danish/Desktop/nutricount/frontend/src/providers/index.tsx\",\n        lineNumber: 11,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9zcmMvcHJvdmlkZXJzL2luZGV4LnRzeCIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFFeUU7QUFDeEM7QUFDYztBQUVoQyxTQUFTSSxVQUFVLEVBQUVDLFFBQVEsRUFBaUM7SUFDM0UsTUFBTSxDQUFDQyxZQUFZLEdBQUdKLCtDQUFRQSxDQUFDLElBQU0sSUFBSUYsOERBQVdBO0lBRXBELHFCQUNFLDhEQUFDQyxzRUFBbUJBO1FBQUNNLFFBQVFEO2tCQUMzQiw0RUFBQ0gsd0RBQVlBO3NCQUNWRTs7Ozs7Ozs7Ozs7QUFJVCIsInNvdXJjZXMiOlsid2VicGFjazovL251dHJpY291bnQtZnJvbnRlbmQvLi9zcmMvcHJvdmlkZXJzL2luZGV4LnRzeD80MTczIl0sInNvdXJjZXNDb250ZW50IjpbIid1c2UgY2xpZW50JztcblxuaW1wb3J0IHsgUXVlcnlDbGllbnQsIFF1ZXJ5Q2xpZW50UHJvdmlkZXIgfSBmcm9tICdAdGFuc3RhY2svcmVhY3QtcXVlcnknO1xuaW1wb3J0IHsgdXNlU3RhdGUgfSBmcm9tICdyZWFjdCc7XG5pbXBvcnQgeyBBdXRoUHJvdmlkZXIgfSBmcm9tICcuL2F1dGgtcHJvdmlkZXInO1xuXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBQcm92aWRlcnMoeyBjaGlsZHJlbiB9OiB7IGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGUgfSkge1xuICBjb25zdCBbcXVlcnlDbGllbnRdID0gdXNlU3RhdGUoKCkgPT4gbmV3IFF1ZXJ5Q2xpZW50KCkpO1xuXG4gIHJldHVybiAoXG4gICAgPFF1ZXJ5Q2xpZW50UHJvdmlkZXIgY2xpZW50PXtxdWVyeUNsaWVudH0+XG4gICAgICA8QXV0aFByb3ZpZGVyPlxuICAgICAgICB7Y2hpbGRyZW59XG4gICAgICA8L0F1dGhQcm92aWRlcj5cbiAgICA8L1F1ZXJ5Q2xpZW50UHJvdmlkZXI+XG4gICk7XG59XG4iXSwibmFtZXMiOlsiUXVlcnlDbGllbnQiLCJRdWVyeUNsaWVudFByb3ZpZGVyIiwidXNlU3RhdGUiLCJBdXRoUHJvdmlkZXIiLCJQcm92aWRlcnMiLCJjaGlsZHJlbiIsInF1ZXJ5Q2xpZW50IiwiY2xpZW50Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./src/providers/index.tsx\n");
+
+/***/ }),
+
+/***/ "(rsc)/./src/app/globals.css":
+/*!*****************************!*\
+  !*** ./src/app/globals.css ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (\"9974e75019d9\");\nif (false) {}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2dsb2JhbHMuY3NzIiwibWFwcGluZ3MiOiI7Ozs7QUFBQSxpRUFBZSxjQUFjO0FBQzdCLElBQUksS0FBVSxFQUFFLEVBQXVCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vbnV0cmljb3VudC1mcm9udGVuZC8uL3NyYy9hcHAvZ2xvYmFscy5jc3M/NzJmZCJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBcIjk5NzRlNzUwMTlkOVwiXG5pZiAobW9kdWxlLmhvdCkgeyBtb2R1bGUuaG90LmFjY2VwdCgpIH1cbiJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/./src/app/globals.css\n");
+
+/***/ }),
+
+/***/ "(rsc)/./src/app/layout.tsx":
+/*!****************************!*\
+  !*** ./src/app/layout.tsx ***!
+  \****************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {\n__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ RootLayout),\n/* harmony export */   metadata: () => (/* binding */ metadata)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/font/google/target.css?{\"path\":\"src/app/layout.tsx\",\"import\":\"Inter\",\"arguments\":[{\"subsets\":[\"latin\"]}],\"variableName\":\"inter\"} */ \"(rsc)/./node_modules/next/font/google/target.css?{\\\"path\\\":\\\"src/app/layout.tsx\\\",\\\"import\\\":\\\"Inter\\\",\\\"arguments\\\":[{\\\"subsets\\\":[\\\"latin\\\"]}],\\\"variableName\\\":\\\"inter\\\"}\");\n/* harmony import */ var next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _globals_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./globals.css */ \"(rsc)/./src/app/globals.css\");\n/* harmony import */ var _providers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/providers */ \"(rsc)/./src/providers/index.tsx\");\nvar __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([_providers__WEBPACK_IMPORTED_MODULE_2__]);\n_providers__WEBPACK_IMPORTED_MODULE_2__ = (__webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__)[0];\n\n\n\n\nconst metadata = {\n    title: \"Nutricount\",\n    description: \"Track your nutrition with ease\"\n};\nconsole.log(\"956248583975-95ggrtg1j9ra2s8tv5f0elbqsl6hvppa.apps.googleusercontent.com\");\nfunction RootLayout({ children }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"html\", {\n        lang: \"en\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"head\", {\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"script\", {\n                    src: \"https://accounts.google.com/gsi/client\",\n                    async: true,\n                    defer: true\n                }, void 0, false, {\n                    fileName: \"/home/danish/Desktop/nutricount/frontend/src/app/layout.tsx\",\n                    lineNumber: 22,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/home/danish/Desktop/nutricount/frontend/src/app/layout.tsx\",\n                lineNumber: 21,\n                columnNumber: 7\n            }, this),\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"body\", {\n                className: (next_font_google_target_css_path_src_app_layout_tsx_import_Inter_arguments_subsets_latin_variableName_inter___WEBPACK_IMPORTED_MODULE_3___default().className),\n                children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_providers__WEBPACK_IMPORTED_MODULE_2__[\"default\"], {\n                    children: children\n                }, void 0, false, {\n                    fileName: \"/home/danish/Desktop/nutricount/frontend/src/app/layout.tsx\",\n                    lineNumber: 25,\n                    columnNumber: 9\n                }, this)\n            }, void 0, false, {\n                fileName: \"/home/danish/Desktop/nutricount/frontend/src/app/layout.tsx\",\n                lineNumber: 24,\n                columnNumber: 7\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/home/danish/Desktop/nutricount/frontend/src/app/layout.tsx\",\n        lineNumber: 20,\n        columnNumber: 5\n    }, this);\n}\n\n__webpack_async_result__();\n} catch(e) { __webpack_async_result__(e); } });//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9zcmMvYXBwL2xheW91dC50c3giLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7O0FBS01BO0FBSGlCO0FBQ2E7QUFJN0IsTUFBTUUsV0FBcUI7SUFDaENDLE9BQU87SUFDUEMsYUFBYTtBQUNmLEVBQUU7QUFFRkMsUUFBUUMsR0FBRyxDQUFDQywwRUFBd0M7QUFDckMsU0FBU0csV0FBVyxFQUNqQ0MsUUFBUSxFQUdSO0lBQ0EscUJBQ0UsOERBQUNDO1FBQUtDLE1BQUs7OzBCQUNULDhEQUFDQzswQkFDQyw0RUFBQ0M7b0JBQU9DLEtBQUk7b0JBQXlDQyxLQUFLO29CQUFDQyxLQUFLOzs7Ozs7Ozs7OzswQkFFbEUsOERBQUNDO2dCQUFLQyxXQUFXcEIsK0pBQWU7MEJBQzlCLDRFQUFDQyxrREFBU0E7OEJBQUVVOzs7Ozs7Ozs7Ozs7Ozs7OztBQUlwQiIsInNvdXJjZXMiOlsid2VicGFjazovL251dHJpY291bnQtZnJvbnRlbmQvLi9zcmMvYXBwL2xheW91dC50c3g/NTdhOSJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgdHlwZSB7IE1ldGFkYXRhIH0gZnJvbSBcIm5leHRcIjtcbmltcG9ydCB7IEludGVyIH0gZnJvbSBcIm5leHQvZm9udC9nb29nbGVcIjtcbmltcG9ydCBcIi4vZ2xvYmFscy5jc3NcIjtcbmltcG9ydCBQcm92aWRlcnMgZnJvbSBcIkAvcHJvdmlkZXJzXCI7XG5cbmNvbnN0IGludGVyID0gSW50ZXIoeyBzdWJzZXRzOiBbXCJsYXRpblwiXSB9KTtcblxuZXhwb3J0IGNvbnN0IG1ldGFkYXRhOiBNZXRhZGF0YSA9IHtcbiAgdGl0bGU6IFwiTnV0cmljb3VudFwiLFxuICBkZXNjcmlwdGlvbjogXCJUcmFjayB5b3VyIG51dHJpdGlvbiB3aXRoIGVhc2VcIixcbn07XG5cbmNvbnNvbGUubG9nKHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX0dPT0dMRV9DTElFTlRfSUQpXG5leHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBSb290TGF5b3V0KHtcbiAgY2hpbGRyZW4sXG59OiBSZWFkb25seTx7XG4gIGNoaWxkcmVuOiBSZWFjdC5SZWFjdE5vZGU7XG59Pikge1xuICByZXR1cm4gKFxuICAgIDxodG1sIGxhbmc9XCJlblwiPlxuICAgICAgPGhlYWQ+XG4gICAgICAgIDxzY3JpcHQgc3JjPVwiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL2dzaS9jbGllbnRcIiBhc3luYyBkZWZlcj48L3NjcmlwdD5cbiAgICAgIDwvaGVhZD5cbiAgICAgIDxib2R5IGNsYXNzTmFtZT17aW50ZXIuY2xhc3NOYW1lfT5cbiAgICAgICAgPFByb3ZpZGVycz57Y2hpbGRyZW59PC9Qcm92aWRlcnM+XG4gICAgICA8L2JvZHk+XG4gICAgPC9odG1sPlxuICApO1xufVxuIl0sIm5hbWVzIjpbImludGVyIiwiUHJvdmlkZXJzIiwibWV0YWRhdGEiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwiY29uc29sZSIsImxvZyIsInByb2Nlc3MiLCJlbnYiLCJORVhUX1BVQkxJQ19HT09HTEVfQ0xJRU5UX0lEIiwiUm9vdExheW91dCIsImNoaWxkcmVuIiwiaHRtbCIsImxhbmciLCJoZWFkIiwic2NyaXB0Iiwic3JjIiwiYXN5bmMiLCJkZWZlciIsImJvZHkiLCJjbGFzc05hbWUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./src/app/layout.tsx\n");
+
+/***/ }),
+
+/***/ "(rsc)/./src/providers/index.tsx":
+/*!*********************************!*\
+  !*** ./src/providers/index.tsx ***!
+  \*********************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
+
+
+const proxy = await (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/home/danish/Desktop/nutricount/frontend/src/providers/index.tsx`)
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (proxy.default);
+
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } }, 1);
+
+/***/ })
+
+};
+;
+
+// load runtime
+var __webpack_require__ = require("../../webpack-runtime.js");
+__webpack_require__.C(exports);
+var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc","vendor-chunks/axios","vendor-chunks/mime-db","vendor-chunks/@tanstack","vendor-chunks/follow-redirects","vendor-chunks/debug","vendor-chunks/form-data","vendor-chunks/get-intrinsic","vendor-chunks/https-proxy-agent","vendor-chunks/agent-base","vendor-chunks/asynckit","vendor-chunks/combined-stream","vendor-chunks/mime-types","vendor-chunks/proxy-from-env","vendor-chunks/ms","vendor-chunks/has-symbols","vendor-chunks/delayed-stream","vendor-chunks/function-bind","vendor-chunks/es-set-tostringtag","vendor-chunks/get-proto","vendor-chunks/call-bind-apply-helpers","vendor-chunks/dunder-proto","vendor-chunks/math-intrinsics","vendor-chunks/es-errors","vendor-chunks/gopd","vendor-chunks/es-define-property","vendor-chunks/hasown","vendor-chunks/has-tostringtag","vendor-chunks/es-object-atoms"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader/index.js?name=app%2F_not-found%2Fpage&page=%2F_not-found%2Fpage&appPaths=&pagePath=..%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-error.js&appDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend%2Fsrc%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2Fhome%2Fdanish%2FDesktop%2Fnutricount%2Ffrontend&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+module.exports = __webpack_exports__;
+
+})();
