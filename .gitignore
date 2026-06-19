@@ -7,3 +7,5 @@ logs
 src/db/migrations/meta
 .env.prod
 
+# Next.js specific files
+.next/*

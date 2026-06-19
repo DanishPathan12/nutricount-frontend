@@ -2,7 +2,7 @@
 
 import { useAuth } from '@/providers/auth-provider';
 import { ProtectedRoute } from '@/components/auth/protected-route';
-import { Activity, LogOut, LayoutDashboard, ShieldAlert } from 'lucide-react';
+import { Activity, LogOut, LayoutDashboard, ShieldAlert, MessageSquare } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -42,6 +42,17 @@ export default function DashboardLayout({
                 >
                   <LayoutDashboard className="h-3.5 w-3.5" />
                   Dashboard
+                </Link>
+                <Link
+                  href="/dashboard/chat"
+                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${
+                    pathname === '/dashboard/chat'
+                      ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
+                      : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
+                  }`}
+                >
+                  <MessageSquare className="h-3.5 w-3.5" />
+                  Fitness Chat
                 </Link>
                 <Link
                   href="/dashboard/admin"
@@ -90,6 +101,16 @@ export default function DashboardLayout({
               }`}
             >
               Dashboard
+            </Link>
+            <Link
+              href="/dashboard/chat"
+              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${
+                pathname === '/dashboard/chat'
+                  ? 'text-white bg-[#02306d]/40'
+                  : 'text-[#ade8f4]/60'
+              }`}
+            >
+              Fitness Chat
             </Link>
             <Link
               href="/dashboard/admin"
