@@ -1,11 +1,10 @@
+.next
 node_modules
-dist
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
 .env
-coverage
-*.log
-logs
-src/db/migrations/meta
-.env.prod
-
-# Next.js specific files
-.next/*
+.env.local
+.env.production.local
+dist
