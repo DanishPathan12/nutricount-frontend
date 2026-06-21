@@ -233,7 +233,7 @@ export default function CalorieEstimatorPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Left Side: Upload & Image Panel */}
-        <div className="lg:col-span-5 flex flex-col gap-6">
+        <div className="lg:col-span-6 flex flex-col gap-6">
           <div className="bg-[#010226]/60 border border-[#02306d]/40 rounded-2xl p-6 backdrop-blur-md">
             <h2 className="text-lg font-bold text-white mb-4 flex items-center gap-2">
               <ImageIcon className="h-5 w-5 text-[#00b4d8]" />
@@ -247,7 +247,7 @@ export default function CalorieEstimatorPage() {
                 onDragLeave={(e) => handleDrag(e, false)}
                 onDrop={handleDrop}
                 onClick={() => fileInputRef.current?.click()}
-                className={`border-2 border-dashed rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer transition duration-200 text-center min-h-[220px] ${dragActive
+                className={`border-2 border-dashed rounded-xl p-8 flex flex-col items-center justify-center cursor-pointer transition duration-200 text-center min-h-[320px] ${dragActive
                     ? 'border-[#00b4d8] bg-[#00b4d8]/5 scale-[0.99]'
                     : 'border-[#02306d]/60 hover:border-[#00b4d8]/60 hover:bg-[#02306d]/10'
                   }`}
@@ -282,11 +282,11 @@ export default function CalorieEstimatorPage() {
             {/* Image Preview and Analysis Button */}
             {previewUrl && (
               <div className="flex flex-col gap-4">
-                <div className="border border-[#02306d]/40 rounded-xl bg-[#010113] overflow-hidden flex items-center justify-center relative min-h-[220px]">
+                <div className="border border-[#02306d]/40 rounded-xl bg-[#010113] overflow-hidden flex items-center justify-center relative min-h-[320px]">
                   <img
                     src={previewUrl}
                     alt="Meal Preview"
-                    className="max-h-72 max-w-full object-contain rounded-lg shadow-md"
+                    className="max-h-96 max-w-full object-contain rounded-lg shadow-md"
                   />
                 </div>
 
@@ -353,10 +353,69 @@ export default function CalorieEstimatorPage() {
               </div>
             )}
           </div>
+
+          {/* Nutritional Narrative Card */}
+          {nutritionResult && (
+            <div className="bg-[#010226]/60 border border-[#02306d]/40 rounded-2xl p-6 backdrop-blur-md flex flex-col gap-5 animate-fadeIn">
+              <div>
+                <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                  <TrendingUp className="h-4 w-4 text-[#00b4d8]" />
+                  Nutritional Narrative
+                </h3>
+                <p className="text-xs text-[#ade8f4]/70 leading-relaxed font-semibold">
+                  {nutritionResult.summary}
+                </p>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-[#02306d]/20 pt-4">
+                {/* Pros */}
+                <div className="space-y-2">
+                  <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wide flex items-center gap-1">
+                    <CheckCircle className="h-3.5 w-3.5" />
+                    Nutritional Benefits
+                  </h4>
+                  <ul className="text-xs text-[#ade8f4]/70 space-y-1.5 list-disc pl-4 font-semibold">
+                    {nutritionResult.healthiness.pros.map((pro, i) => (
+                      <li key={i}>{pro}</li>
+                    ))}
+                  </ul>
+                </div>
+
+                {/* Cons */}
+                <div className="space-y-2">
+                  <h4 className="text-xs font-bold text-rose-400 uppercase tracking-wide flex items-center gap-1">
+                    <AlertTriangle className="h-3.5 w-3.5" />
+                    Areas of Caution
+                  </h4>
+                  <ul className="text-xs text-[#ade8f4]/70 space-y-1.5 list-disc pl-4 font-semibold">
+                    {nutritionResult.healthiness.cons.map((con, i) => (
+                      <li key={i}>{con}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+
+              {/* Recommendations */}
+              <div className="border-t border-[#02306d]/20 pt-4">
+                <h3 className="text-xs font-bold text-[#00b4d8] uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                  <Lightbulb className="h-4 w-4" />
+                  Dietary Adjustments & Tips
+                </h3>
+                <ul className="text-xs text-[#ade8f4]/70 space-y-1.5 list-none pl-0 font-semibold">
+                  {nutritionResult.recommendations.map((rec, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-[#00b4d8] shrink-0 font-bold">💡</span>
+                      <span>{rec}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Right Side: Detailed Results Dashboard */}
-        <div className="lg:col-span-7 flex flex-col gap-6">
+        <div className="lg:col-span-6 flex flex-col gap-6">
           {!nutritionResult && !isAnalyzing && !isUploading && (
             <div className="bg-[#010226]/40 border border-[#02306d]/20 rounded-2xl p-8 backdrop-blur-md flex flex-col items-center justify-center text-center min-h-[350px]">
               <div className="h-16 w-16 rounded-2xl bg-[#02306d]/20 flex items-center justify-center mb-4 text-[#00b4d8]/60">
@@ -600,62 +659,6 @@ export default function CalorieEstimatorPage() {
                 </div>
               </div>
 
-              {/* Feedback Summary, Pros, Cons */}
-              <div className="bg-[#010226]/60 border border-[#02306d]/40 rounded-2xl p-6 backdrop-blur-md flex flex-col gap-5">
-                <div>
-                  <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                    <TrendingUp className="h-4 w-4 text-[#00b4d8]" />
-                    Nutritional Narrative
-                  </h3>
-                  <p className="text-xs text-[#ade8f4]/70 leading-relaxed font-semibold">
-                    {nutritionResult.summary}
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 border-t border-[#02306d]/20 pt-4">
-                  {/* Pros */}
-                  <div className="space-y-2">
-                    <h4 className="text-xs font-bold text-emerald-400 uppercase tracking-wide flex items-center gap-1">
-                      <CheckCircle className="h-3.5 w-3.5" />
-                      Nutritional Benefits
-                    </h4>
-                    <ul className="text-xs text-[#ade8f4]/70 space-y-1.5 list-disc pl-4 font-semibold">
-                      {nutritionResult.healthiness.pros.map((pro, i) => (
-                        <li key={i}>{pro}</li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  {/* Cons */}
-                  <div className="space-y-2">
-                    <h4 className="text-xs font-bold text-rose-400 uppercase tracking-wide flex items-center gap-1">
-                      <AlertTriangle className="h-3.5 w-3.5" />
-                      Areas of Caution
-                    </h4>
-                    <ul className="text-xs text-[#ade8f4]/70 space-y-1.5 list-disc pl-4 font-semibold">
-                      {nutritionResult.healthiness.cons.map((con, i) => (
-                        <li key={i}>{con}</li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-
-                {/* Recommendations */}
-                <div className="border-t border-[#02306d]/20 pt-4">
-                  <h3 className="text-xs font-bold text-[#00b4d8] uppercase tracking-wider mb-2 flex items-center gap-1.5">
-                    <Lightbulb className="h-4 w-4" />
-                    Dietary Adjustments & Tips
-                  </h3>
-                  <ul className="text-xs text-[#ade8f4]/70 space-y-1.5 list-none pl-0 font-semibold">
-                    {nutritionResult.recommendations.map((rec, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <span className="text-[#00b4d8] shrink-0 font-bold">💡</span>
-                        <span>{rec}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
             </div>
           )}
         </div>
