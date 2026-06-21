@@ -53,6 +53,8 @@ interface AuthContextType {
   profileLoading: boolean;
   login: (idToken: string) => Promise<void>;
   logout: () => Promise<void>;
+  sendOtp: (email: string) => Promise<void>;
+  verifyOtp: (email: string, code: string) => Promise<void>;
   isAuthenticated: boolean;
   refreshProfile: () => Promise<void>;
   setProfile: React.Dispatch<React.SetStateAction<UserProfile | null>>;
@@ -161,6 +163,54 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     }
   };
 
+  const sendOtp = async (email: string) => {
+    await api.post('/auth/otp/send', { email });
+  };
+
+  const verifyOtp = async (email: string, code: string) => {
+    setIsLoading(true);
+    setProfileLoading(true);
+    try {
+      const response = await api.post('/auth/otp/verify', { email, code });
+      const { user: loggedInUser, accessToken } = response.data;
+      
+      localStorage.setItem('accessToken', accessToken);
+      setUser(loggedInUser);
+
+      // Dynamic header mapping
+      api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
+      
+      // Check user profile
+      let userProfile: UserProfile | null = null;
+      try {
+        const profileResponse = await api.get('/user-profiles/me');
+        userProfile = profileResponse.data.data;
+        setProfile(userProfile);
+      } catch (profileError: any) {
+        if (profileError.response?.status === 404) {
+          setProfile(null);
+        } else {
+          console.error('Failed to fetch profile', profileError);
+        }
+      }
+
+      if (userProfile) {
+        router.push('/dashboard');
+      } else {
+        router.push('/profile/setup');
+      }
+    } catch (error) {
+      console.error('OTP Verification failed', error);
+      setUser(null);
+      setProfile(null);
+      localStorage.removeItem('accessToken');
+      throw error;
+    } finally {
+      setIsLoading(false);
+      setProfileLoading(false);
+    }
+  };
+
   const refreshProfile = async () => {
     setProfileLoading(true);
     try {
@@ -186,6 +236,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         profileLoading,
         login,
         logout,
+        sendOtp,
+        verifyOtp,
         isAuthenticated: !!user,
         refreshProfile,
         setProfile,
