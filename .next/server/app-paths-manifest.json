@@ -1,1 +1,8 @@
-{}
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/profile/setup/page": "app/profile/setup/page.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/dashboard/chat/page": "app/dashboard/chat/page.js",
+  "/dashboard/admin/page": "app/dashboard/admin/page.js",
+  "/dashboard/calorie-estimator/page": "app/dashboard/calorie-estimator/page.js"
+}

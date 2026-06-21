@@ -3,11 +3,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { useAuth } from '@/providers/auth-provider';
 import api from '@/lib/axios';
-import { 
-  Send, 
-  Bot, 
-  User, 
-  Sparkles, 
+import {
+  Send,
+  Bot,
+  User,
+  Sparkles,
   ArrowLeft,
   Info,
   ChevronRight,
@@ -35,14 +35,14 @@ export default function ChatPage() {
       sender: 'bot',
       text: `Hello ${profile?.firstName || user?.name || 'there'}! 👋 I am **NutriBot**, your personalized AI fitness and nutrition coach. 
 
-${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')}*) and metrics. Ask me any questions about meal plans, nutrition, workouts, or recovery!` : "I noticed you haven't completed your profile yet! For personalized guidance tailored to your height, weight, activity levels, and goals, please complete your profile. In the meantime, I can answer any general fitness or nutrition questions you have!"}`,
+${profile ? `I've analyzed your profile goals (*${profile.goal?.replace('_', ' ') || 'N/A'}*) and metrics. Ask me any questions about meal plans, nutrition, workouts, or recovery!` : "I noticed you haven't completed your profile yet! For personalized guidance tailored to your height, weight, activity levels, and goals, please complete your profile. In the meantime, I can answer any general fitness or nutrition questions you have!"}`,
       timestamp: new Date()
     }
   ]);
   const [inputText, setInputText] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  
+
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -72,16 +72,16 @@ ${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')
 
     try {
       const response = await api.post('/fitness-chat', { message: text });
-      
+
       const botResponseText = response.data.data.response;
-      
+
       const botMsg: Message = {
         id: (Date.now() + 1).toString(),
         sender: 'bot',
         text: botResponseText,
         timestamp: new Date()
       };
-      
+
       setMessages(prev => [...prev, botMsg]);
     } catch (err: any) {
       console.error('Failed to get chat response', err);
@@ -115,7 +115,7 @@ ${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')
 
   return (
     <main className="mx-auto max-w-7xl py-8 px-4 sm:px-6 lg:px-8">
-      
+
       {/* Back button and page title */}
       <div className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
         <div>
@@ -137,10 +137,10 @@ ${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-8 h-[calc(100vh-14rem)] min-h-[500px]">
-        
+
         {/* Chat Area (lg:col-span-3) */}
         <div className="lg:col-span-3 flex flex-col bg-[#010226] border border-[#02306d]/40 rounded-2xl overflow-hidden shadow-2xl relative">
-          
+
           {/* Top Panel - Mini status */}
           <div className="bg-[#010113]/80 border-b border-[#02306d]/40 px-6 py-4 flex items-center justify-between">
             <div className="flex items-center gap-3">
@@ -156,7 +156,7 @@ ${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')
                 <p className="text-[10px] text-[#ade8f4]/50">Powered by Gemini AI</p>
               </div>
             </div>
-            
+
             {/* Quick check on customization status */}
             <div className="hidden sm:block">
               {profile ? (
@@ -188,12 +188,11 @@ ${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')
                     <Bot className="h-4 w-4 text-[#00b4d8]" />
                   </div>
                 )}
-                
-                <div className={`max-w-[85%] sm:max-w-[75%] rounded-2xl p-4 shadow-md ${
-                  msg.sender === 'user'
+
+                <div className={`max-w-[85%] sm:max-w-[75%] rounded-2xl p-4 shadow-md ${msg.sender === 'user'
                     ? 'bg-gradient-to-r from-[#023e8a] to-[#0077b6] text-white rounded-tr-none border border-[#00b4d8]/20'
                     : 'bg-[#010113]/70 border border-[#02306d]/30 text-[#e9f9fc] rounded-tl-none'
-                }`}>
+                  }`}>
                   <div className="text-xs font-semibold mb-1 opacity-50 flex items-center justify-between">
                     <span>{msg.sender === 'user' ? 'You' : 'NutriBot'}</span>
                     <span className="text-[9px]">
@@ -293,11 +292,11 @@ ${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')
 
         {/* Sidebar context details (lg:col-span-1) */}
         <div className="lg:col-span-1 space-y-6">
-          
+
           {/* User Personalization metrics summary */}
           <div className="bg-[#010226] border border-[#02306d]/40 rounded-2xl p-5 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 h-32 w-32 bg-[#00b4d8]/5 blur-2xl pointer-events-none rounded-full" />
-            
+
             <h3 className="text-sm font-bold text-white mb-4 flex items-center gap-1.5 uppercase tracking-wide">
               <Info className="h-4 w-4 text-[#00b4d8]" />
               AI Context Profile
@@ -320,11 +319,11 @@ ${profile ? `I've analyzed your profile goals (*${profile.goal.replace('_', ' ')
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-[#ade8f4]/50 flex items-center gap-1.5"><Dumbbell className="h-3.5 w-3.5 text-[#00b4d8]" />Goal</span>
-                    <span className="font-semibold text-white capitalize">{profile.goal.replace('_', ' ')}</span>
+                    <span className="font-semibold text-white capitalize">{profile.goal?.replace('_', ' ') || 'N/A'}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-[#ade8f4]/50 flex items-center gap-1.5"><Heart className="h-3.5 w-3.5 text-[#00b4d8]" />Diet Type</span>
-                    <span className="font-semibold text-[#ade8f4] capitalize">{profile.dietType.replace('_', ' ')}</span>
+                    <span className="font-semibold text-[#ade8f4] capitalize">{profile?.dietType?.replace('_', ' ') || 'N/A'}</span>
                   </div>
                 </div>
 

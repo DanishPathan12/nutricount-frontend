@@ -3,16 +3,16 @@
 import { useEffect, useState } from 'react';
 import { useAuth, UserProfile } from '@/providers/auth-provider';
 import api from '@/lib/axios';
-import { 
-  Activity, 
-  MapPin, 
-  Dumbbell, 
-  Heart, 
-  Edit3, 
-  Trash2, 
-  Eye, 
-  ChevronLeft, 
-  ChevronRight, 
+import {
+  Activity,
+  MapPin,
+  Dumbbell,
+  Heart,
+  Edit3,
+  Trash2,
+  Eye,
+  ChevronLeft,
+  ChevronRight,
   Sparkles,
   X,
   Sliders
@@ -20,7 +20,7 @@ import {
 
 export default function AdminPage() {
   const { refreshProfile, setProfile } = useAuth();
-  
+
   // Profiles Directory State
   const [profiles, setProfiles] = useState<UserProfile[]>([]);
   const [profilesLoading, setProfilesLoading] = useState(true);
@@ -32,7 +32,7 @@ export default function AdminPage() {
   const [isDetailOpen, setIsDetailOpen] = useState(false);
   const [isDeleteConfirmOpen, setIsDeleteConfirmOpen] = useState(false);
   const [profileToDeleteId, setProfileToDeleteId] = useState<string | null>(null); // null = myself, string = other userId
-  
+
   // Edit State
   const [isEditOpen, setIsEditOpen] = useState(false);
   const [editTargetId, setEditTargetId] = useState<string | null>(null); // null = myself, string = other userId
@@ -171,11 +171,11 @@ export default function AdminPage() {
   return (
     <main className="mx-auto max-w-7xl py-10 px-4 sm:px-6 lg:px-8">
       <div className="space-y-6">
-        
+
         {/* Profiles Directory Card */}
         <div className="rounded-2xl border border-[#02306d]/40 bg-[#010226] p-6 shadow-xl relative overflow-hidden">
           <div className="absolute top-0 right-0 h-40 w-40 bg-[#0077b6]/5 blur-3xl pointer-events-none rounded-full" />
-          
+
           <div className="flex justify-between items-center mb-6">
             <h2 className="text-lg font-bold text-white tracking-wide flex items-center gap-2">
               <Sparkles className="h-4 w-4 text-[#00b4d8]" />
@@ -226,9 +226,9 @@ export default function AdminPage() {
                           <p className="text-[10px] text-[#ade8f4]/45 mt-0.5">{p.city}, {p.country}</p>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
-                          <p className="text-white capitalize">{p.goal.replace('_', ' ')}</p>
+                          <p className="text-white capitalize">{p.goal?.replace('_', ' ') || 'N/A'}</p>
                           <span className="inline-block mt-1 text-[9px] font-bold uppercase bg-[#0077b6]/20 text-[#00b4d8] px-2 py-0.5 rounded border border-[#00b4d8]/15">
-                            {p.dietType.replace('_', ' ')}
+                            {p?.dietType?.replace('_', ' ') || 'N/A'}
                           </span>
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-right">
@@ -294,7 +294,7 @@ export default function AdminPage() {
       {isDetailOpen && selectedProfile && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
           <div className="w-full max-w-lg bg-[#010226] border border-[#02306d]/40 rounded-2xl p-6 shadow-2xl relative">
-            <button 
+            <button
               onClick={() => setIsDetailOpen(false)}
               className="absolute top-4 right-4 text-[#ade8f4]/60 hover:text-white"
             >
@@ -339,9 +339,9 @@ export default function AdminPage() {
               </div>
 
               <div className="space-y-2 border-t border-[#02306d]/30 pt-4 text-xs">
-                <div className="flex justify-between"><span className="text-[#ade8f4]/60">Activity Level:</span><span className="font-bold text-white capitalize">{selectedProfile.activityLevel}</span></div>
-                <div className="flex justify-between"><span className="text-[#ade8f4]/60">Goal:</span><span className="font-bold text-white capitalize">{selectedProfile.goal.replace('_', ' ')}</span></div>
-                <div className="flex justify-between"><span className="text-[#ade8f4]/60">Diet Type:</span><span className="font-bold text-white capitalize">{selectedProfile.dietType.replace('_', ' ')}</span></div>
+                <div className="flex justify-between"><span className="text-[#ade8f4]/60">Activity Level:</span><span className="font-bold text-white capitalize">{selectedProfile.activityLevel?.replace('_', ' ') || 'N/A'}</span></div>
+                <div className="flex justify-between"><span className="text-[#ade8f4]/60">Goal:</span><span className="font-bold text-white capitalize">{selectedProfile.goal?.replace('_', ' ') || 'N/A'}</span></div>
+                <div className="flex justify-between"><span className="text-[#ade8f4]/60">Diet Type:</span><span className="font-bold text-white capitalize">{selectedProfile?.dietType?.replace('_', ' ') || 'N/A'}</span></div>
                 <div className="flex justify-between"><span className="text-[#ade8f4]/60">Sleep Hours:</span><span className="font-bold text-white">{selectedProfile.sleepHours || 'N/A'} hrs</span></div>
                 <div className="flex justify-between"><span className="text-[#ade8f4]/60">Workouts / Week:</span><span className="font-bold text-white">{selectedProfile.workoutDaysPerWeek || '0'} days</span></div>
                 <div className="flex justify-between"><span className="text-[#ade8f4]/60">Occupation:</span><span className="font-bold text-white capitalize">{selectedProfile.occupation || 'N/A'}</span></div>
@@ -380,7 +380,7 @@ export default function AdminPage() {
       {isEditOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
           <div className="w-full max-w-2xl bg-[#010226] border border-[#02306d]/40 rounded-2xl p-6 shadow-2xl relative">
-            <button 
+            <button
               onClick={() => setIsEditOpen(false)}
               className="absolute top-4 right-4 text-[#ade8f4]/60 hover:text-white"
             >
@@ -572,7 +572,7 @@ export default function AdminPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
           <div className="w-full max-w-sm bg-[#010226] border border-red-500/30 rounded-2xl p-6 shadow-2xl text-center">
             <Trash2 className="h-12 w-12 text-red-500 mx-auto mb-4" />
-            
+
             <h3 className="text-lg font-bold text-white mb-2">Delete Profile</h3>
             <p className="text-xs text-[#ade8f4]/60 mb-6 leading-relaxed">
               Are you absolutely sure you want to delete this user profile? This action is permanent and cannot be undone.

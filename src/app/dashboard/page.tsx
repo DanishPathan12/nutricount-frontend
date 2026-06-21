@@ -3,16 +3,16 @@
 import { useEffect, useState } from 'react';
 import { useAuth, UserProfile } from '@/providers/auth-provider';
 import api from '@/lib/axios';
-import { 
-  User, 
-  Activity, 
-  MapPin, 
-  Dumbbell, 
-  Heart, 
-  Edit3, 
-  Trash2, 
+import {
+  User,
+  Activity,
+  MapPin,
+  Dumbbell,
+  Heart,
+  Edit3,
+  Trash2,
   X,
-  Sliders, 
+  Sliders,
   Sparkles,
   ShieldAlert,
   Info,
@@ -23,7 +23,7 @@ import Link from 'next/link';
 
 export default function DashboardPage() {
   const { user, profile, refreshProfile, setProfile } = useAuth();
-  
+
   // Edit State
   const [isEditOpen, setIsEditOpen] = useState(false);
   const [editTargetId] = useState<string | null>(null); // always null for self
@@ -129,10 +129,10 @@ export default function DashboardPage() {
   return (
     <main className="mx-auto max-w-7xl py-10 px-4 sm:px-6 lg:px-8">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        
+
         {/* Left Side: Welcome Panel (lg:col-span-2) */}
         <div className="lg:col-span-2 space-y-6">
-          
+
           {/* Welcome Card */}
           <div className="rounded-2xl border border-[#02306d]/40 bg-gradient-to-r from-[#010226] to-[#01053b] p-8 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 h-48 w-48 bg-[#00b4d8]/10 blur-3xl pointer-events-none rounded-full animate-pulse" />
@@ -142,7 +142,7 @@ export default function DashboardPage() {
             <p className="text-sm text-[#ade8f4]/70 mt-2 max-w-lg">
               Here is your nutritional summary and goals for today. Keep tracking to maintain a healthy lifestyle.
             </p>
-            
+
             <div className="mt-6 flex flex-wrap gap-3">
               <button
                 onClick={() => profile && openEditModal(profile)}
@@ -168,15 +168,15 @@ export default function DashboardPage() {
               <p className="text-[10px] font-bold text-[#ade8f4]/45 uppercase tracking-wider">Calories Goal</p>
               <p className="text-xl font-black text-white mt-1">{profile?.targetCalories || 'N/A'} <span className="text-xs font-medium text-[#ade8f4]/60">kcal</span></p>
             </div>
-            
+
             <div className="bg-[#010226] border border-[#02306d]/30 p-4 rounded-xl text-center shadow-md">
               <p className="text-[10px] font-bold text-[#ade8f4]/45 uppercase tracking-wider">Diet Type</p>
-              <p className="text-sm font-bold text-[#90e0ef] mt-2 capitalize">{profile?.dietType.replace('_', ' ')}</p>
+              <p className="text-sm font-bold text-[#90e0ef] mt-2 capitalize">{profile?.dietType?.replace('_', ' ') || 'N/A'}</p>
             </div>
-            
+
             <div className="bg-[#010226] border border-[#02306d]/30 p-4 rounded-xl text-center shadow-md">
               <p className="text-[10px] font-bold text-[#ade8f4]/45 uppercase tracking-wider">Activity Level</p>
-              <p className="text-sm font-bold text-[#90e0ef] mt-2 capitalize">{profile?.activityLevel.replace('_', ' ')}</p>
+              <p className="text-sm font-bold text-[#90e0ef] mt-2 capitalize">{profile?.activityLevel?.replace('_', ' ') || 'N/A'}</p>
             </div>
 
             <div className="bg-[#010226] border border-[#02306d]/30 p-4 rounded-xl text-center shadow-md">
@@ -198,8 +198,8 @@ export default function DashboardPage() {
                 </span>
               </div>
               <div className="w-full bg-[#010113] rounded-full h-2.5 border border-[#02306d]/40">
-                <div 
-                  className="bg-gradient-to-r from-[#0077b6] to-[#00b4d8] h-2 rounded-full transition-all duration-500" 
+                <div
+                  className="bg-gradient-to-r from-[#0077b6] to-[#00b4d8] h-2 rounded-full transition-all duration-500"
                   style={{ width: `${getWeightProgressPercent()}%` }}
                 />
               </div>
@@ -219,7 +219,7 @@ export default function DashboardPage() {
                   <Sparkles className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-white text-sm">Goal Insight: {profile.goal.replace('_', ' ').toUpperCase()}</h3>
+                  <h3 className="font-bold text-white text-sm">Goal Insight: {(profile.goal || 'maintain').replace('_', ' ').toUpperCase()}</h3>
                   <p className="text-xs text-[#ade8f4]/70 mt-1 leading-relaxed">
                     {getGoalInsight(profile.goal)}
                   </p>
@@ -234,7 +234,7 @@ export default function DashboardPage() {
         <div className="lg:col-span-1 space-y-6">
           <div className="rounded-2xl border border-[#02306d]/40 bg-[#010226] p-6 shadow-xl relative overflow-hidden">
             <div className="absolute top-0 right-0 h-32 w-32 bg-[#00b4d8]/5 blur-2xl pointer-events-none rounded-full" />
-            
+
             <div className="flex justify-between items-start mb-6">
               <h2 className="text-lg font-bold text-white tracking-wide flex items-center gap-2">
                 <User className="h-4 w-4 text-[#00b4d8]" />
@@ -303,15 +303,15 @@ export default function DashboardPage() {
                 <div className="space-y-3 pt-4 border-t border-[#02306d]/30 text-xs">
                   <div className="flex justify-between items-center">
                     <span className="text-[#ade8f4]/50 flex items-center gap-1.5"><Dumbbell className="h-3.5 w-3.5 text-[#00b4d8]" />Goal</span>
-                    <span className="font-semibold text-white capitalize">{profile.goal.replace('_', ' ')}</span>
+                    <span className="font-semibold text-white capitalize">{profile.goal?.replace('_', ' ') || 'N/A'}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-[#ade8f4]/50 flex items-center gap-1.5"><Heart className="h-3.5 w-3.5 text-[#00b4d8]" />Diet Type</span>
-                    <span className="font-semibold text-[#ade8f4] capitalize">{profile.dietType.replace('_', ' ')}</span>
+                    <span className="font-semibold text-[#ade8f4] capitalize">{profile?.dietType?.replace('_', ' ') || 'N/A'}</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="text-[#ade8f4]/50 flex items-center gap-1.5"><Sliders className="h-3.5 w-3.5 text-[#00b4d8]" />Activity Level</span>
-                    <span className="font-semibold text-[#ade8f4] capitalize">{profile.activityLevel.replace('_', ' ')}</span>
+                    <span className="font-semibold text-[#ade8f4] capitalize">{profile.activityLevel?.replace('_', ' ') || 'N/A'}</span>
                   </div>
                   {profile.workoutDaysPerWeek !== null && (
                     <div className="flex justify-between items-center">
@@ -343,7 +343,7 @@ export default function DashboardPage() {
       {isEditOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm">
           <div className="w-full max-w-2xl bg-[#010226] border border-[#02306d]/40 rounded-2xl p-6 shadow-2xl relative">
-            <button 
+            <button
               onClick={() => setIsEditOpen(false)}
               className="absolute top-4 right-4 text-[#ade8f4]/60 hover:text-white"
             >
@@ -535,7 +535,7 @@ export default function DashboardPage() {
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm">
           <div className="w-full max-w-sm bg-[#010226] border border-red-500/30 rounded-2xl p-6 shadow-2xl text-center">
             <Trash2 className="h-12 w-12 text-red-500 mx-auto mb-4" />
-            
+
             <h3 className="text-lg font-bold text-white mb-2">Delete Profile</h3>
             <p className="text-xs text-[#ade8f4]/60 mb-6 leading-relaxed">
               Are you absolutely sure you want to delete your profile? This action is permanent and cannot be undone.
