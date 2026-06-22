@@ -5,10 +5,6 @@ const api = axios.create({
   withCredentials: true, // Send cookies with requests
 });
 
-
-console.log(process.env.NEXT_PUBLIC_API_URL);
-
-
 let isRefreshing = false;
 let failedQueue: any[] = [];
 

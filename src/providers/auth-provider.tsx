@@ -77,11 +77,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
 
-  console.log('user', user);
-  console.log('profile', profile);
-
-
-
   const checkAuth = async () => {
     try {
       const response = await api.get('/auth/me');
