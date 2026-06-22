@@ -3,6 +3,13 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import api from '@/lib/axios';
 import { useRouter } from 'next/navigation';
+import { useAppDispatch, useAppSelector } from '@/redux/store';
+import {
+  setUser as setUserAction,
+  setProfile as setProfileAction,
+  clearUser as clearUserAction,
+  fetchUserProfile
+} from '@/redux/userSlice';
 
 export interface User {
   id: string;
@@ -63,35 +70,25 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(null);
-  const [profile, setProfile] = useState<UserProfile | null>(null);
+  const dispatch = useAppDispatch();
+  const user = useAppSelector((state) => state.user.user);
+  const profile = useAppSelector((state) => state.user.profile);
+  const profileLoading = useAppSelector((state) => state.user.loading);
   const [isLoading, setIsLoading] = useState(true);
-  const [profileLoading, setProfileLoading] = useState(true);
   const router = useRouter();
 
   const checkAuth = async () => {
     try {
       const response = await api.get('/auth/me');
-      setUser(response.data.user);
+      dispatch(setUserAction(response.data.user));
 
-      // Now fetch user profile
-      try {
-        const profileResponse = await api.get('/user-profiles/me');
-        setProfile(profileResponse.data.data);
-      } catch (profileError: any) {
-        if (profileError.response?.status === 404) {
-          setProfile(null);
-        } else {
-          console.error('Failed to fetch profile', profileError);
-        }
-      }
+      // Fetch user profile via Redux
+      await dispatch(fetchUserProfile());
     } catch (error) {
-      setUser(null);
-      setProfile(null);
+      dispatch(clearUserAction());
       localStorage.removeItem('accessToken');
     } finally {
       setIsLoading(false);
-      setProfileLoading(false);
     }
   };
 
@@ -100,51 +97,36 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       checkAuth();
     } else {
       setIsLoading(false);
-      setProfileLoading(false);
     }
   }, []);
 
   const login = async (idToken: string) => {
     setIsLoading(true);
-    setProfileLoading(true);
     try {
       const response = await api.post('/auth/google', { idToken });
       const { user: loggedInUser, accessToken } = response.data;
       
       localStorage.setItem('accessToken', accessToken);
-      setUser(loggedInUser);
+      dispatch(setUserAction(loggedInUser));
 
       // Dynamic header mapping
       api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
       
       // Check user profile
-      let userProfile: UserProfile | null = null;
-      try {
-        const profileResponse = await api.get('/user-profiles/me');
-        userProfile = profileResponse.data.data;
-        setProfile(userProfile);
-      } catch (profileError: any) {
-        if (profileError.response?.status === 404) {
-          setProfile(null);
-        } else {
-          console.error('Failed to fetch profile', profileError);
-        }
-      }
+      const profileResult = await dispatch(fetchUserProfile()).unwrap();
 
-      if (userProfile) {
+      if (profileResult) {
         router.push('/dashboard');
       } else {
         router.push('/profile/setup');
       }
     } catch (error) {
       console.error('Login failed', error);
-      setUser(null);
-      setProfile(null);
+      dispatch(clearUserAction());
       localStorage.removeItem('accessToken');
       throw error;
     } finally {
       setIsLoading(false);
-      setProfileLoading(false);
     }
   };
 
@@ -156,8 +138,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
       console.error('Logout error', err);
     } finally {
       localStorage.removeItem('accessToken');
-      setUser(null);
-      setProfile(null);
+      dispatch(clearUserAction());
       setIsLoading(false);
       router.push('/login');
     }
@@ -169,61 +150,48 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const verifyOtp = async (email: string, code: string) => {
     setIsLoading(true);
-    setProfileLoading(true);
     try {
       const response = await api.post('/auth/otp/verify', { email, code });
       const { user: loggedInUser, accessToken } = response.data;
       
       localStorage.setItem('accessToken', accessToken);
-      setUser(loggedInUser);
+      dispatch(setUserAction(loggedInUser));
 
       // Dynamic header mapping
       api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
       
       // Check user profile
-      let userProfile: UserProfile | null = null;
-      try {
-        const profileResponse = await api.get('/user-profiles/me');
-        userProfile = profileResponse.data.data;
-        setProfile(userProfile);
-      } catch (profileError: any) {
-        if (profileError.response?.status === 404) {
-          setProfile(null);
-        } else {
-          console.error('Failed to fetch profile', profileError);
-        }
-      }
+      const profileResult = await dispatch(fetchUserProfile()).unwrap();
 
-      if (userProfile) {
+      if (profileResult) {
         router.push('/dashboard');
       } else {
         router.push('/profile/setup');
       }
     } catch (error) {
       console.error('OTP Verification failed', error);
-      setUser(null);
-      setProfile(null);
+      dispatch(clearUserAction());
       localStorage.removeItem('accessToken');
       throw error;
     } finally {
       setIsLoading(false);
-      setProfileLoading(false);
     }
   };
 
   const refreshProfile = async () => {
-    setProfileLoading(true);
     try {
-      const response = await api.get('/user-profiles/me');
-      setProfile(response.data.data);
-    } catch (error: any) {
-      if (error.response?.status === 404) {
-        setProfile(null);
-      } else {
-        console.error('Failed to refresh profile', error);
-      }
-    } finally {
-      setProfileLoading(false);
+      await dispatch(fetchUserProfile()).unwrap();
+    } catch (error) {
+      console.error('Failed to refresh profile', error);
+    }
+  };
+
+  const setProfile: React.Dispatch<React.SetStateAction<UserProfile | null>> = (value) => {
+    if (typeof value === 'function') {
+      const newValue = (value as Function)(profile);
+      dispatch(setProfileAction(newValue));
+    } else {
+      dispatch(setProfileAction(value));
     }
   };
 

@@ -80,11 +80,19 @@ export default function DashboardLayout({
 
               <div className="flex items-center gap-6">
                 <div className="flex items-center gap-3">
-                  <img
-                    src={user?.avatarUrl || ''}
-                    alt={user?.name}
-                    className="h-8 w-8 rounded-full border border-[#00b4d8]/40 shadow-sm"
-                  />
+                  {user?.avatarUrl ? (
+                    <img
+                      src={user.avatarUrl}
+                      alt={user.name}
+                      className="h-8 w-8 rounded-full border border-[#00b4d8]/40 shadow-sm"
+                    />
+                  ) : (
+                    <div className="flex h-8 w-8 items-center justify-center rounded-full border border-[#00b4d8]/40 bg-[#02306d]/40 shadow-sm">
+                      <span className="text-xs font-bold text-white uppercase">
+                        {user?.name ? user.name.charAt(0) : 'U'}
+                      </span>
+                    </div>
+                  )}
                   <div className="hidden sm:block text-left">
                     <p className="text-xs font-semibold text-white">{user?.name}</p>
                     <p className="text-[10px] text-[#ade8f4]/60">{user?.email}</p>
