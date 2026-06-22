@@ -1,6 +1,7 @@
 'use client';
 
 import { useAuth } from '@/providers/auth-provider';
+import { useAppDispatch, useAppSelector } from '@/redux/store';
 import { ProtectedRoute } from '@/components/auth/protected-route';
 import { Activity, LogOut, LayoutDashboard, ShieldAlert, MessageSquare, Apple } from 'lucide-react';
 import Link from 'next/link';
@@ -13,6 +14,7 @@ export default function DashboardLayout({
 }) {
   const { user, logout } = useAuth();
   const pathname = usePathname();
+  const profile = useAppSelector((state) => state.user.profile);
 
   return (
     <ProtectedRoute>
@@ -34,48 +36,44 @@ export default function DashboardLayout({
               <div className="hidden md:flex items-center gap-6">
                 <Link
                   href="/dashboard"
-                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${
-                    pathname === '/dashboard'
-                      ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
-                      : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
-                  }`}
+                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${pathname === '/dashboard'
+                    ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
+                    : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
+                    }`}
                 >
                   <LayoutDashboard className="h-3.5 w-3.5" />
                   Dashboard
                 </Link>
                 <Link
                   href="/dashboard/chat"
-                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${
-                    pathname === '/dashboard/chat'
-                      ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
-                      : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
-                  }`}
+                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${pathname === '/dashboard/chat'
+                    ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
+                    : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
+                    }`}
                 >
                   <MessageSquare className="h-3.5 w-3.5" />
                   Fitness Chat
                 </Link>
                 <Link
                   href="/dashboard/calorie-estimator"
-                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${
-                    pathname === '/dashboard/calorie-estimator'
-                      ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
-                      : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
-                  }`}
+                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${pathname === '/dashboard/calorie-estimator'
+                    ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
+                    : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
+                    }`}
                 >
                   <Apple className="h-3.5 w-3.5" />
                   Calorie Estimator
                 </Link>
-                <Link
+                {profile?.role === "admin" && <Link
                   href="/dashboard/admin"
-                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${
-                    pathname === '/dashboard/admin'
-                      ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
-                      : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
-                  }`}
+                  className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${pathname === '/dashboard/admin'
+                    ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
+                    : 'text-[#ade8f4]/60 border-transparent hover:text-white hover:bg-[#02306d]/20'
+                    }`}
                 >
                   <ShieldAlert className="h-3.5 w-3.5" />
                   Admin Panel
-                </Link>
+                </Link>}
               </div>
 
               <div className="flex items-center gap-6">
@@ -108,49 +106,45 @@ export default function DashboardLayout({
               </div>
             </div>
           </div>
-          
+
           {/* Mobile navigation links */}
           <div className="md:hidden flex justify-around border-t border-[#02306d]/20 py-2 bg-[#010226]/50">
             <Link
               href="/dashboard"
-              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${
-                pathname === '/dashboard'
-                  ? 'text-white bg-[#02306d]/40'
-                  : 'text-[#ade8f4]/60'
-              }`}
+              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${pathname === '/dashboard'
+                ? 'text-white bg-[#02306d]/40'
+                : 'text-[#ade8f4]/60'
+                }`}
             >
               Dashboard
             </Link>
             <Link
               href="/dashboard/chat"
-              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${
-                pathname === '/dashboard/chat'
-                  ? 'text-white bg-[#02306d]/40'
-                  : 'text-[#ade8f4]/60'
-              }`}
+              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${pathname === '/dashboard/chat'
+                ? 'text-white bg-[#02306d]/40'
+                : 'text-[#ade8f4]/60'
+                }`}
             >
               Fitness Chat
             </Link>
             <Link
               href="/dashboard/calorie-estimator"
-              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${
-                pathname === '/dashboard/calorie-estimator'
-                  ? 'text-white bg-[#02306d]/40'
-                  : 'text-[#ade8f4]/60'
-              }`}
+              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${pathname === '/dashboard/calorie-estimator'
+                ? 'text-white bg-[#02306d]/40'
+                : 'text-[#ade8f4]/60'
+                }`}
             >
               Calorie Estimator
             </Link>
-            <Link
+            {<Link
               href="/dashboard/admin"
-              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${
-                pathname === '/dashboard/admin'
-                  ? 'text-white bg-[#02306d]/40'
-                  : 'text-[#ade8f4]/60'
-              }`}
+              className={`flex items-center gap-1 text-xs font-semibold px-3 py-1 rounded-lg transition ${pathname === '/dashboard/admin'
+                ? 'text-white bg-[#02306d]/40'
+                : 'text-[#ade8f4]/60'
+                }`}
             >
               Admin Panel
-            </Link>
+            </Link>}
           </div>
         </nav>
 

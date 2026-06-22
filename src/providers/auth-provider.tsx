@@ -77,6 +77,11 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
   const router = useRouter();
 
+  console.log('user', user);
+  console.log('profile', profile);
+
+
+
   const checkAuth = async () => {
     try {
       const response = await api.get('/auth/me');
@@ -105,13 +110,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const response = await api.post('/auth/google', { idToken });
       const { user: loggedInUser, accessToken } = response.data;
-      
+
       localStorage.setItem('accessToken', accessToken);
       dispatch(setUserAction(loggedInUser));
 
       // Dynamic header mapping
       api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
-      
+
       // Check user profile
       const profileResult = await dispatch(fetchUserProfile()).unwrap();
 
@@ -153,13 +158,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const response = await api.post('/auth/otp/verify', { email, code });
       const { user: loggedInUser, accessToken } = response.data;
-      
+
       localStorage.setItem('accessToken', accessToken);
       dispatch(setUserAction(loggedInUser));
 
       // Dynamic header mapping
       api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
-      
+
       // Check user profile
       const profileResult = await dispatch(fetchUserProfile()).unwrap();
 
