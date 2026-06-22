@@ -64,7 +64,7 @@ export default function DashboardLayout({
                   <Apple className="h-3.5 w-3.5" />
                   Calorie Estimator
                 </Link>
-                {profile?.role === "admin" && <Link
+                <Link
                   href="/dashboard/admin"
                   className={`flex items-center gap-1.5 text-xs font-semibold px-3 py-1.5 rounded-lg transition duration-150 border ${pathname === '/dashboard/admin'
                     ? 'text-white bg-[#02306d]/40 border-[#00b4d8]/30 shadow-md shadow-[#00b4d8]/5'
@@ -73,7 +73,7 @@ export default function DashboardLayout({
                 >
                   <ShieldAlert className="h-3.5 w-3.5" />
                   Admin Panel
-                </Link>}
+                </Link>
               </div>
 
               <div className="flex items-center gap-6">
