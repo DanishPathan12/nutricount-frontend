@@ -8,7 +8,7 @@ export interface User {
   id: string;
   email: string;
   name: string;
-  avatarUrl: string;
+  avatarUrl?: string | null;
 }
 
 export interface UserProfile {
@@ -52,6 +52,8 @@ interface AuthContextType {
   isLoading: boolean;
   profileLoading: boolean;
   login: (idToken: string) => Promise<void>;
+  sendOtp: (email: string, purpose?: 'signup' | 'login' | 'auth') => Promise<{ success: boolean; message: string; isNewUser?: boolean }>;
+  verifyOtp: (email: string, otp: string, name?: string) => Promise<{ isNewUser?: boolean }>;
   logout: () => Promise<void>;
   isAuthenticated: boolean;
   refreshProfile: () => Promise<void>;
@@ -66,6 +68,34 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
   const [profileLoading, setProfileLoading] = useState(true);
   const router = useRouter();
+
+  const handleAuthSuccess = async (loggedInUser: User, accessToken: string) => {
+    localStorage.setItem('accessToken', accessToken);
+    setUser(loggedInUser);
+
+    // Dynamic header mapping
+    api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
+
+    // Check user profile
+    let userProfile: UserProfile | null = null;
+    try {
+      const profileResponse = await api.get('/user-profiles/me');
+      userProfile = profileResponse.data.data;
+      setProfile(userProfile);
+    } catch (profileError: any) {
+      if (profileError.response?.status === 404) {
+        setProfile(null);
+      } else {
+        console.error('Failed to fetch profile', profileError);
+      }
+    }
+
+    if (userProfile) {
+      router.push('/dashboard');
+    } else {
+      router.push('/profile/setup');
+    }
+  };
 
   const checkAuth = async () => {
     try {
@@ -108,37 +138,34 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     try {
       const response = await api.post('/auth/google', { idToken });
       const { user: loggedInUser, accessToken } = response.data;
-      
-      localStorage.setItem('accessToken', accessToken);
-      setUser(loggedInUser);
-
-      // Dynamic header mapping
-      api.defaults.headers.common.Authorization = `Bearer ${accessToken}`;
-      
-      // Check user profile
-      let userProfile: UserProfile | null = null;
-      try {
-        const profileResponse = await api.get('/user-profiles/me');
-        userProfile = profileResponse.data.data;
-        setProfile(userProfile);
-      } catch (profileError: any) {
-        if (profileError.response?.status === 404) {
-          setProfile(null);
-        } else {
-          console.error('Failed to fetch profile', profileError);
-        }
-      }
-
-      if (userProfile) {
-        router.push('/dashboard');
-      } else {
-        router.push('/profile/setup');
-      }
+      await handleAuthSuccess(loggedInUser, accessToken);
     } catch (error) {
-      console.error('Login failed', error);
+      console.error('Google login failed', error);
       setUser(null);
       setProfile(null);
       localStorage.removeItem('accessToken');
+      throw error;
+    } finally {
+      setIsLoading(false);
+      setProfileLoading(false);
+    }
+  };
+
+  const sendOtp = async (email: string, purpose: 'signup' | 'login' | 'auth' = 'auth') => {
+    const response = await api.post('/auth/send-otp', { email, purpose });
+    return response.data;
+  };
+
+  const verifyOtp = async (email: string, otp: string, name?: string) => {
+    setIsLoading(true);
+    setProfileLoading(true);
+    try {
+      const response = await api.post('/auth/verify-otp', { email, otp, name });
+      const { user: loggedInUser, accessToken, isNewUser } = response.data;
+      await handleAuthSuccess(loggedInUser, accessToken);
+      return { isNewUser };
+    } catch (error) {
+      console.error('OTP verification failed', error);
       throw error;
     } finally {
       setIsLoading(false);
@@ -185,6 +212,8 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         isLoading,
         profileLoading,
         login,
+        sendOtp,
+        verifyOtp,
         logout,
         isAuthenticated: !!user,
         refreshProfile,

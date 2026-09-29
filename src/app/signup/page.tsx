@@ -3,10 +3,10 @@
 import { Suspense } from 'react';
 import { AuthCard } from '@/components/auth/auth-card';
 
-export default function LoginPage() {
+export default function SignupPage() {
   return (
     <Suspense fallback={<div className="min-h-screen bg-[#010113]" />}>
-      <AuthCard initialMode="signin" />
+      <AuthCard initialMode="signup" />
     </Suspense>
   );
 }
