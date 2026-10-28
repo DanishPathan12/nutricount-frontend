@@ -46,7 +46,7 @@ export function AuthCard({ initialMode = 'signin' }: AuthCardProps) {
             Nutri<span className="bg-gradient-to-r from-[#00b4d8] to-[#90e0ef] bg-clip-text text-transparent">count</span>
           </h1>
           <p className="mt-1.5 text-xs sm:text-sm text-[#ade8f4]/60">
-            Elevate your wellness with precise nutrition analytics.
+            Elevate your wellness with precise nutrition analytics.ye
           </p>
         </div>
 
