@@ -1,0 +1,99 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # -------------------------------------------------------------
+  # Job 1: Fast Code & Type Verification
+  # -------------------------------------------------------------
+  type-check:
+    name: Type Check
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: TypeScript Type Check
+        run: npx tsc --noEmit
+
+  # -------------------------------------------------------------
+  # Job 2: Deploy & Build Directly on the Server
+  # -------------------------------------------------------------
+  deploy:
+    name: Deploy & Build on Server
+    needs: type-check
+    if: (github.ref == 'refs/heads/main' && github.event_name == 'push') || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Connect via SSH and build container on server
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.SSH_PORT || 22 }}
+          script: |
+            echo "Navigating to project directory on server..."
+            cd ${{ secrets.SERVER_PROJECT_PATH || '~/nutricount-frontend' }}
+
+            echo "Pulling latest code from main branch..."
+            git pull origin main
+
+            echo "Building Docker container and launching on server..."
+            if [ -f "docker-compose.yml" ]; then
+              docker compose up -d --build
+            else
+              docker build -t nutricount-frontend .
+              docker stop nutricount-frontend || true
+              docker rm nutricount-frontend || true
+              docker run -d \
+                --name nutricount-frontend \
+                --restart unless-stopped \
+                -p 3000:3000 \
+                nutricount-frontend
+            fi
+
+            echo "Cleaning up dangling images..."
+            docker image prune -f
+
+            echo "Deployment and server-side Docker build completed successfully!"
+
+            echo "Building Docker container and launching on server..."
+            if [ -f "docker-compose.yml" ]; then
+              docker compose up -d --build
+            else
+              docker build -t nutricount-frontend .
+              docker stop nutricount-frontend || true
+              docker rm nutricount-frontend || true
+              docker run -d \
+                --name nutricount-frontend \
+                --restart unless-stopped \
+                -p 3000:3000 \
+                nutricount-frontend
+            fi
+
+            echo "Cleaning up dangling images..."
+            docker image prune -f
+
+            echo "Deployment and server-side Docker build completed successfully!"
+

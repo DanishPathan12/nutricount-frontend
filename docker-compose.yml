@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_API_URL: ${NEXT_PUBLIC_API_URL:-/api/v1}
+        NEXT_PUBLIC_GOOGLE_CLIENT_ID: ${NEXT_PUBLIC_GOOGLE_CLIENT_ID:-956248583975-95ggrtg1j9ra2s8tv5f0elbqsl6hvppa.apps.googleusercontent.com}
+        NEXT_PUBLIC_AWS_BUCKET_NAME: ${NEXT_PUBLIC_AWS_BUCKET_NAME:-batchly}
+        NEXT_PUBLIC_AWS_REGION: ${NEXT_PUBLIC_AWS_REGION:-ap-south-1}
+    image: nutricount-frontend:latest
+    container_name: nutricount-frontend
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - HOSTNAME=0.0.0.0
+

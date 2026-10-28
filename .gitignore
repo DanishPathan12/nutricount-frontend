@@ -1,11 +1,14 @@
 node_modules
 dist
 .env
+.env*.local
+.env.prod
+.env.production
 coverage
 *.log
 logs
 src/db/migrations/meta
-.env.prod
+*.tsbuildinfo
 
 # Next.js specific files
 .next/*
