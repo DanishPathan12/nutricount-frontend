@@ -14,6 +14,16 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
+  debug-ssh-key:
+    name: Debug SSH key
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug SSH key
+        run: |
+          printf '%s\n' "${{ secrets.SSH_KEY }}" > /tmp/k
+          chmod 600 /tmp/k
+          ssh-keygen -y -f /tmp/k
+          rm /tmp/k
   # -------------------------------------------------------------
   # Job 1: Fast Code & Type Verification
   # -------------------------------------------------------------
